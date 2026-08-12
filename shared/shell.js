@@ -1,4 +1,5 @@
 import "./store.js";
+import { setupCommandCenter } from "./commands.js";
 
 const root = new URL("../", import.meta.url);
 window.BB_ROOT = root;
@@ -63,7 +64,7 @@ function updateChrome(key) {
 }
 async function loadModule(key) {
   const moduleUrl = new URL(`../pages/${routes[key].module}`, import.meta.url).href;
-  return import(`${moduleUrl}?v=20260812-1`);
+  return import(`${moduleUrl}?v=20260812-2`);
 }
 async function mountRoute(key, html, options = {}) {
   const token = ++navigationToken;
@@ -114,8 +115,7 @@ function bindShell() {
   document.getElementById("open-sidebar")?.addEventListener("click", () => document.body.classList.add("sidebar-open"));
   document.getElementById("close-sidebar")?.addEventListener("click", () => document.body.classList.remove("sidebar-open"));
   document.getElementById("export-store")?.addEventListener("click", exportStore);
-  document.getElementById("global-search")?.addEventListener("input", event => window.dispatchEvent(new CustomEvent("bb:search", { detail: event.target.value })));
-  document.getElementById("add-record")?.addEventListener("click", () => window.dispatchEvent(new CustomEvent("bb:add-record")));
+  setupCommandCenter({ navigate: navigateTo });
   window.addEventListener("popstate", () => {
     const key = routeForPath(rootPathFromUrl(location.href));
     navigateTo(key, { push: false, target: location.href });
