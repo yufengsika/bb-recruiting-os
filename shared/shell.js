@@ -2,7 +2,7 @@ import "./store.js";
 
 const root = new URL("../", import.meta.url);
 window.BB_ROOT = root;
-window.BBRouteUrl = key => routeUrl(key);
+window.BBRouteUrl = (key, params) => routeUrl(key, params);
 const routes = {
   home: { path: "/", label: "今日", eyebrow: "DAILY CONTROL", module: "home.js", icon: "▦" },
   applications: { path: "/applications/", label: "申请追踪", eyebrow: "PIPELINE", module: "applications.js", icon: "▣" },
@@ -24,7 +24,14 @@ function routeForPath(path) {
   const normalized = path.length > 1 && !path.endsWith("/") ? `${path}/` : path;
   return Object.entries(routes).find(([, route]) => route.path === normalized)?.[0] || "home";
 }
-function routeUrl(key) { return new URL(routes[key].path.replace(/^\//, ""), root).href; }
+function routeUrl(key, params) {
+  const url = new URL(routes[key].path.replace(/^\//, ""), root);
+  if (params) {
+    const entries = params instanceof URLSearchParams ? params.entries() : Object.entries(params);
+    for (const [name, value] of entries) if (value != null && value !== "") url.searchParams.set(name, value);
+  }
+  return url.href;
+}
 function rootPathFromUrl(url) { return new URL(url).pathname.replace(new URL(root).pathname, "/"); }
 function currentKey() {
   const bodyRoute = document.body.dataset.page;
@@ -56,7 +63,7 @@ function updateChrome(key) {
 }
 async function loadModule(key) {
   const moduleUrl = new URL(`../pages/${routes[key].module}`, import.meta.url).href;
-  return import(`${moduleUrl}?v=20260804-1`);
+  return import(`${moduleUrl}?v=20260812-1`);
 }
 async function mountRoute(key, html, options = {}) {
   const token = ++navigationToken;
@@ -65,17 +72,17 @@ async function mountRoute(key, html, options = {}) {
   if (currentModule?.unmount) currentModule.unmount();
   currentModule = null;
   if (html != null) outlet.innerHTML = html;
+  if (options.push) history.pushState({ route: key }, "", options.target || routeUrl(key));
   updateChrome(key);
   const module = await loadModule(key);
   if (token !== navigationToken) return;
   currentModule = module;
   module.mount?.(outlet, { route: key, store: window.BBStore, navigate: navigateTo });
   window.scrollTo(0, 0);
-  if (options.push) history.pushState({ route: key }, "", routeUrl(key));
 }
 async function navigateTo(key, options = {}) {
   if (!routes[key]) return;
-  const target = routeUrl(key);
+  const target = options.target ? new URL(options.target, location.href).href : routeUrl(key, options.params);
   if (new URL(target).href === location.href) return mountRoute(key, null);
   try {
     const response = await fetch(target, { headers: { "X-BB-Partial": "1" } });
@@ -84,7 +91,7 @@ async function navigateTo(key, options = {}) {
     const documentHtml = new DOMParser().parseFromString(html, "text/html");
     const incoming = documentHtml.querySelector("#page-content");
     if (!incoming) throw new Error("Target page has no outlet");
-    await mountRoute(key, incoming.innerHTML, { push: options.push !== false });
+    await mountRoute(key, incoming.innerHTML, { push: options.push !== false, target });
   } catch (error) {
     window.location.href = target;
   }
@@ -102,7 +109,7 @@ function bindShell() {
     const link = event.target.closest("a[data-route]");
     if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || link.target === "_blank") return;
     event.preventDefault();
-    navigateTo(link.dataset.route, { push: true });
+    navigateTo(link.dataset.route, { push: true, target: link.href });
   });
   document.getElementById("open-sidebar")?.addEventListener("click", () => document.body.classList.add("sidebar-open"));
   document.getElementById("close-sidebar")?.addEventListener("click", () => document.body.classList.remove("sidebar-open"));
@@ -111,7 +118,7 @@ function bindShell() {
   document.getElementById("add-record")?.addEventListener("click", () => window.dispatchEvent(new CustomEvent("bb:add-record")));
   window.addEventListener("popstate", () => {
     const key = routeForPath(rootPathFromUrl(location.href));
-    navigateTo(key, { push: false });
+    navigateTo(key, { push: false, target: location.href });
   });
 }
 async function boot() {
