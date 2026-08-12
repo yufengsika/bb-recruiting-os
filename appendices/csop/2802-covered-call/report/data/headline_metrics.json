@@ -1,0 +1,11 @@
+{
+  "start_nav": 8.7914,
+  "end_nav": 7.2903,
+  "nav_return": -0.1707464112655549,
+  "tr_return": -0.07674322252202548,
+  "cash_return": -0.07292353891302872,
+  "max_nav_drawdown": -0.23304560919842032,
+  "max_total_return_drawdown": -0.160450454866381,
+  "simple_cash_rate": 0.2469034196123616,
+  "net_hurdle": 0.2275034196123616
+}

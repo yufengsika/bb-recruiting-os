@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2802 ETF完整投资尽调与NAV可持续性分析</title>
+<style>
+@font-face { font-family: "ReportCN"; src: url("file:///System/Library/Fonts/Supplemental/Arial%20Unicode.ttf") format("truetype"); font-weight: 100 900; font-style: normal; }
+@page { size: A4; margin: 14mm 13mm 16mm; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "ReportCN", "Arial Unicode MS", sans-serif; color: #18222d; font-size: 10.2pt; line-height: 1.62; letter-spacing: 0; background: #fff; }
+a { color: #0b5d73; text-decoration: none; border-bottom: 0.4px solid #80a8b1; }
+h1, h2, h3 { color: #102a43; page-break-after: avoid; letter-spacing: 0; }
+h1 { font-size: 28pt; line-height: 1.18; margin: 0 0 8mm; }
+h2 { font-size: 18pt; border-bottom: 1.2px solid #9fb3c8; padding-bottom: 2mm; margin: 9mm 0 4mm; }
+h3 { font-size: 12.5pt; margin: 6mm 0 2mm; color: #334e68; }
+p { margin: 0 0 3.2mm; }
+ul { margin: 1.5mm 0 3.5mm 5mm; padding-left: 4mm; }
+li { margin-bottom: 1.3mm; }
+.cover { min-height: 265mm; page-break-after: always; display: flex; flex-direction: column; justify-content: space-between; padding: 7mm 3mm 4mm; }
+.cover .kicker { color: #b42318; font-weight: 700; font-size: 11pt; border-top: 4px solid #b42318; padding-top: 5mm; width: 66mm; }
+.cover .subtitle { font-size: 15pt; line-height: 1.5; color: #40566c; max-width: 145mm; }
+.cover .meta { color: #52606d; border-top: 1px solid #bcccdc; padding-top: 5mm; }
+.page { break-after: page; page-break-after: always; }
+.pagebreak { page-break-before: always; }
+.lead { font-size: 13pt; line-height: 1.55; color: #243b53; margin-bottom: 5mm; }
+.verdict { border-left: 5px solid #b42318; background: #fff5f3; padding: 4.5mm 5mm; margin: 4mm 0 5mm; }
+.verdict strong { color: #8f1d14; }
+.numbers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin: 4mm 0 5mm; }
+.metric { border-top: 3px solid #3559a6; padding: 3mm 1mm 2mm; }
+.metric b { display: block; font-size: 19pt; line-height: 1.2; color: #102a43; }
+.metric span { color: #52606d; font-size: 8.8pt; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; align-items: start; }
+.callout { background: #f2f7fa; border-left: 4px solid #087e8b; padding: 4mm; margin: 4mm 0; page-break-inside: avoid; }
+.warning { background: #fff7ed; border-left: 4px solid #d97706; padding: 4mm; margin: 4mm 0; page-break-inside: avoid; }
+.formula { font-family: "ReportCN", "Arial Unicode MS", monospace; background: #f4f6f8; border: 1px solid #d9e2ec; padding: 3mm; margin: 3mm 0; font-size: 9pt; page-break-inside: avoid; }
+table { width: 100%; border-collapse: collapse; margin: 3mm 0 5mm; font-size: 8.7pt; page-break-inside: avoid; }
+th { text-align: left; background: #eaf0f5; color: #243b53; padding: 2.2mm; border-bottom: 1.2px solid #9fb3c8; vertical-align: top; }
+td { padding: 2.1mm; border-bottom: 0.7px solid #d9e2ec; vertical-align: top; }
+tr:nth-child(even) td { background: #fafcfd; }
+.yes { color: #166534; font-weight: 700; } .no { color: #b42318; font-weight: 700; } .conditional { color: #a15c00; font-weight: 700; }
+figure { margin: 5mm 0 6mm; page-break-inside: avoid; }
+figure img { width: 100%; display: block; }
+figcaption { font-size: 8.3pt; color: #52606d; margin-top: 1mm; }
+.small { color: #52606d; font-size: 8.5pt; }
+.source-list { font-size: 8.2pt; line-height: 1.5; word-break: break-word; }
+.source-list li { margin-bottom: 2mm; }
+.tag { display: inline-block; border: 1px solid #9fb3c8; color: #334e68; padding: 0.5mm 1.8mm; margin-right: 1.5mm; font-size: 8pt; }
+.footer-note { border-top: 1px solid #bcccdc; padding-top: 3mm; margin-top: 7mm; color: #52606d; font-size: 8pt; }
+</style>
+</head>
+<body>
+
+<section class="cover">
+  <div>
+    <div class="kicker">独立投资尽调 · ETF / 期权策略</div>
+    <h1>2802 ETF完整投资尽调<br>与NAV可持续性分析</h1>
+    <p class="subtitle">高分派是否可持续、NAV是否会长期衰减、当前深度价内Call仓位是否值得买</p>
+  </div>
+  <div class="meta">
+    <p><b>产品：</b>南方东英国企指数备兑认购期权主动型ETF（2802 HK）</p>
+    <p><b>研究截止：</b>2026年7月17日（香港时间）　<b>仓位快照：</b>2026年7月16日</p>
+    <p><b>适用框架：</b>一般香港投资者；1-3年持有期；分派取现与再投资分别分析</p>
+    <p class="small">本报告不构成个性化投资建议。所有预测情景均为机制压力测试，并非回报预测。</p>
+  </div>
+</section>
+
+<section class="page">
+<h2>结论摘要 1/2：先说答案</h2>
+<div class="verdict"><strong>核心判断：</strong>2802不是“年化24%的收益产品”，而是<strong>中国权益多头 + 70%-100%卖出指数Call + 主动滚仓 + 月度现金分派</strong>。它可以把波动率风险溢价和部分未来上涨提前变现，但无法把高分派率变成高预期总回报。</div>
+<div class="numbers">
+  <div class="metric"><b>24.53%</b><span>发行人展示的历史年化分派率；非预测、非保证</span></div>
+  <div class="metric"><b>22.75%</b><span>维持NAV所需的净期权收益+资本回报门槛</span></div>
+  <div class="metric"><b>1.20%</b><span>估计全年经常性开支；高于3416的0.75%</span></div>
+  <div class="metric"><b>7个月</b><span>实盘历史约数；尚无审计年报或中报可检验</span></div>
+</div>
+<table>
+<thead><tr><th>投资用途</th><th>结论</th><th>理由</th></tr></thead>
+<tbody>
+<tr><td>长期中国权益核心仓位</td><td class="no">不适合</td><td>长期上涨参与被Call截断；费用高；策略历史太短；路径依赖明显。</td></tr>
+<tr><td>本金稳定的“收息”仓位</td><td class="no">不适合</td><td>分派可来自资本；除息等额压低NAV；下跌尾部仍接近中国权益多头。</td></tr>
+<tr><td>中国复苏/大牛市多头</td><td class="no">不适合</td><td>高覆盖会放弃大部分突破行权价后的上涨；当前Call已深度价内。</td></tr>
+<tr><td>震荡市战术卫星仓位</td><td class="conditional">有条件适合</td><td>隐含波动率高、随后实现波动率低、指数横盘或温和上涨且不持续越过行权价时最有利。</td></tr>
+</tbody></table>
+<h3>现在买、等滚仓，还是换产品？</h3>
+<p><b>截至2026年7月16日，不建议为了7月分派在除息前追买。</b>基金卖出2026年7月30日到期、行权价7700点的HSCEI Call；当日指数8318.14点，行权价低约7.4%。覆盖部分在滚仓前的新增上涨参与接近零。除息不会产生免费收益。</p>
+<p>如果一定要配置同类策略，优先比较3416：同一HSCEI、同样70%-100%覆盖，但费用0.75%、历史更长、规模更大、三币柜台。2802需要用更好的实际滚仓、流动性或税务/交易体验来弥补每年约45bp的费用劣势，目前证据不足。</p>
+</section>
+
+<section class="page">
+<h2>结论摘要 2/2：NAV会不会一直跌？</h2>
+<p class="lead">不会“机械地必跌”，但在分派目标接近24%-25%、高覆盖Call和1.20%费用同时存在时，<b>NAV长期侵蚀是基准风险，不是尾部例外</b>。只有策略的真实经济收益覆盖分派后，除息形成的缺口才会修复。</p>
+<div class="formula">投资总回报 = NAV变动 + 分派再投资<br>策略经济收益 = 国指多头 + 股息 + 毛权利金 - Call结算损失 - 期货/期权滚仓与交易成本 + 现金/借贷收益 - 费用</div>
+<div class="grid2">
+  <div>
+    <h3>什么情况下NAV可稳定或上升</h3>
+    <ul><li>隐含波动率高于随后实现波动率；</li><li>指数横盘、缓慢上涨或温和下跌；</li><li>指数到期不大幅高于行权价，Call赔付较少；</li><li>管理人主动降低覆盖、提高行权价或提前滚仓有效；</li><li>分派随真实收益下调，而非固定金额刚性维持。</li></ul>
+  </div>
+  <div>
+    <h3>什么情况下NAV易持续磨损</h3>
+    <ul><li>大牛市：上涨被Call截断，分派仍持续；</li><li>暴跌：权利金只提供有限缓冲，Delta很快接近普通多头；</li><li>先跌后V形反弹：低位滚仓后，反弹又被新Call截断；</li><li>毛权利金高但Call结算损失同样高；</li><li>新增资金承接旧有价内Call，买入者继承路径依赖。</li></ul>
+  </div>
+</div>
+<figure><img src="charts/06_nav_hurdle.png"><figcaption>来源：2802产品页（NAV与分派率）、恒生指数公司HSCEI事实表（股息率）、KFS（费用）；计算为简单年化门槛，不是回报预测。</figcaption></figure>
+</section>
+
+<section>
+<h2>1. 产品到底是什么</h2>
+<div class="warning"><b>会计分类不能替代经济判断。</b>期权金在基金会计上通常进入资本，因此“100%资本分派”不自动等于原封不动退还投资者本金；但无论来源为何，除息都会即时减少每单位NAV。真正要看的是分派后总回报、期权金扣除Call损失后的净额，以及NAV能否跨周期修复。</div>
+<table><tbody>
+<tr><th>法律与监管</th><td>香港单位信托项下子基金；SFC主动ETF授权（CE编号BWZ967）；2025-12-11上市；不追踪指数。</td></tr>
+<tr><th>投资框架</th><td>50%-100% NAV直接持有HSCEI成分股；HSCEI期货名义金额最高50%；HSCEI ETF最高30%；卖出Call覆盖总多头敞口70%-100%。</td></tr>
+<tr><th>期权参数</th><td>上市或OTC、欧式现金结算；主要使用前月ATM，亦可OTM、远月、周度OTM或提前滚仓；写出时行权价一般在指数上下30%内，期限不超过一年。</td></tr>
+<tr><th>费用</th><td>管理费0.99%；估计全年经常性开支1.20%（首个12个月上限2%，实际可与估计不同）。未上市A类管理费1.50%、全年开支1.60%。</td></tr>
+<tr><th>交易</th><td>港元交易；每手100单位；一级申赎最低500,000单位，按7.2903港元NAV约需364.5万港元。</td></tr>
+<tr><th>服务机构</th><td>管理人南方东英资产管理；受托人、登记处及托管人均为HSBC相关实体。参与证券商、做市商通过一级申赎与二级报价连接NAV和市价。</td></tr>
+</tbody></table>
+
+<h3>发行设计：为什么要“约24%年化、月派、可从资本派息”</h3>
+<p>这套设计把一个复杂的短波动策略包装成容易理解的月度现金流，能显著扩大对“收息”投资者的募集吸引力，也让分派数字在销售材料中成为第一信号。但分派率是管理人决定的现金流政策，不是组合自动产生的收益率。固定金额分派在NAV下跌后，会机械地抬高“年化分派率”。</p>
+<p>按2026-07-16约91.57亿港元AUM，0.99%管理费对应管理人年化收入约9,065万港元；1.20%全年开支对应投资者约1.099亿港元年度拖累。规模扩大提高发行人经济利益，但不会自动改善每单位策略回报。</p>
+
+<h3>管理能力真正决定什么</h3>
+<p>关键并非“会不会卖Call”，而是覆盖率、行权价、期限、滚仓时点与工具选择。70%和100%覆盖在牛市中的结果可以相差巨大；ATM比OTM收入高，但更快牺牲上涨；提前滚仓可以释放Delta，也可能在高价买回期权、锁定亏损。</p>
+<p>招募说明书允许新增申购沿用现有行权价和到期日。这意味着大量新资金在旧Call已价内时进入，可能不是以当时指数为基准重新卖ATM，而是继承旧仓位的低Delta。这正是“买入时点”比普通被动ETF更重要的原因。</p>
+
+<h3>ETF交易结构与容量</h3>
+<p>一级申赎和做市通常可压缩折溢价，但不是无条件保证。快速扩张会增加期货、期权、保证金和OTC对手方管理负担。招募说明书提示：交易所持仓限制可能妨碍按目标规模写出期权，甚至限制申购；极端市场保证金可能超过预期的25% NAV。证券借贷预计约20%、上限50%，借款上限10%，又增加抵押品与对手方链条。</p>
+<div class="callout"><b>透明度缺口：</b>2802产品页披露当前期权名称、行权价和“到行权价前潜在上涨”，但未像3416页面那样清楚列出每只期权名义金额、覆盖率及NAV占比。因此外部投资者无法精确重建当日Delta、Gamma和真实上涨捕获率。</div>
+
+<h2>2. 24%分派率的经济真相</h2>
+<p>投资者每月收到0.15港元时，基金同日少了同等资产；若投资者把现金留在账户，总财富是“剩余NAV + 累计现金”，若再投资则是更多单位乘以较低NAV。两种口径都不会凭空创造财富。</p>
+<figure><img src="charts/01_nav_total_return.png"><figcaption>2802官方日频NAV与分派重建。2026-07分派尚未除息，未计入7月16日总回报。若日频接口缺失，图表以官方日期检查点线性连接；最终CSV保留重建口径。</figcaption></figure>
+<figure><img src="charts/02_distribution_source.png"><figcaption>2026年1-5月的管理账将0.71港元全部列为资本；6-7月构成截至研究日尚未披露。同期发行人披露的月度毛期权金收益率依次为2.14%、2.16%、2.85%、2.02%、1.93%。资本分类可能包含期权金。</figcaption></figure>
+
+<h3>毛期权金不是免费收益</h3>
+<p>实盘数据正好说明这个区别：2026年1-5月披露的月度毛期权金收益率都接近或高于当月分派收益率，但这段期间NAV仍未稳定上升。原因是毛期权金还要与Call结算损失、国指涨跌、滚仓与费用合并后，才形成组合的真实经济收益。</p>
+<p>假设每月收2%毛权利金，若指数上涨10%、覆盖率85%，Call结算损失约8.5%，净期权结果是2%-8.5%=-6.5%；与指数多头合并后，策略只获得约3.5%毛回报。若指数下跌10%，Call到期无价值，权利金把亏损从约-10%缓冲到约-8%，但并未保护本金。</p>
+<figure><img src="charts/05_coverage_capture.png"><figcaption>机制示意：ATM、月末结算、2%毛权利金；不含股息、费用和路径中的提前滚仓。实际行权价、波动率与滚仓会改变曲线。</figcaption></figure>
+
+<h3>NAV门槛为什么这么高</h3>
+<p>0.15港元×12÷7.2903港元=24.69%简单年化现金率。HSCEI股息率约3.14%，费用约1.20%，因此组合还要从净期权经济收益和资本涨幅取得约22.75%，NAV才有望维持。净期权收益必须扣除Call结算损失、买回与滚仓成本；把24%毛期权金直接与24%分派相抵是错误算法。</p>
+
+<h2>3. 实盘表现：七个月能证明什么</h2>
+<div class="numbers">
+  <div class="metric"><b>-17.1%</b><span>成立至7月16日单位NAV变动</span></div>
+  <div class="metric"><b>-7.7%</b><span>成立至7月16日分派再投资估算</span></div>
+  <div class="metric"><b>-7.3%</b><span>成立至7月16日分派取现并持有</span></div>
+  <div class="metric"><b>-16.0%</b><span>重建总回报最大回撤</span></div>
+</div>
+<p>截至2026-06-30，发行人公布的NAV-to-NAV、分派再投资总回报为：1个月-7.67%、3个月-6.69%、6个月/YTD -11.91%、成立以来-11.22%。同日HSCEI事实表显示YTD价格回报-15.21%、总回报-14.08%。短样本里2802在跌市略有缓冲，但总回报仍明显为负。</p>
+<figure><img src="charts/03_ytd_official_comparison.png"><figcaption>2802总回报采用发行人官方数据；单位NAV柱为起点到期末的近似变化；HSCEI采用恒生指数公司2026-06事实表。</figcaption></figure>
+<figure><img src="charts/04_drawdown.png"><figcaption>分派重建可以减少“只看NAV”造成的夸大，但总回报本身仍有显著回撤。</figcaption></figure>
+
+<h3>为什么3416是更有用的长期检验</h3>
+<p>3416自2024年2月上市，采用同一HSCEI、相同70%-100%覆盖框架。按发行人截至2026-07-16的同一页面口径，2025全年总回报+18.44%，2026年初至7月16日-9.02%，过去一年-3.71%，成立以来+30.89%。这同时否定两种极端说法：它不是“必然一直跌”，也不是“高分派天然防跌”。</p>
+<figure><img src="charts/10_3416_empirical.png"><figcaption>来源：Global X 3416产品页；NAV-to-NAV、分派再投资、扣除基金费用但不含投资者交易成本。各柱期限不同，用于观察跨环境稳定性，不用于横向年化。</figcaption></figure>
+<p>更重要的实证结论不是某一段绝对回报，而是结构性：2025的正回报说明震荡/上行环境可以创造财富；2026的负回报说明权利金无法消除下跌；过去一年为负而成立以来为正，说明入场时点与滚仓路径非常重要。3416几乎所有月度分派也被列为资本，进一步证明“资本分派”是此类期权会计的常态，但不证明本金稳定。</p>
+
+<h2>4. 当前仓位与买入时点</h2>
+<table><tbody>
+<tr><th>快照</th><td>2026-07-16</td></tr>
+<tr><th>HSCEI</th><td>8318.14点</td></tr>
+<tr><th>卖出Call</th><td>HSCEI 2026-07-30 C7700</td></tr>
+<tr><th>价内程度</th><td>行权价较现货低约7.4%；发行人显示“到行权价前潜在上涨”0%</td></tr>
+<tr><th>经济含义</th><td>覆盖部分到期前净Delta接近零；指数继续上涨，长仓增值大部分由短Call负债增加抵消；指数回落但仍高于7700时，短Call负债下降会提供一定抵消。</td></tr>
+<tr><th>关键未知</th><td>精确覆盖率、名义金额、Delta及NAV占比未充分披露，无法量化全基金即时上涨捕获率。</td></tr>
+</tbody></table>
+<div class="warning"><b>买入建议：</b>不要把7月31日0.15港元当作免费收益。除息前买入等于用较高含息价格换取随后的现金与等额NAV下降。更可比的入场点是下一次滚仓后，观察新行权价是否回到ATM/OTM、覆盖率、期权名义金额、基金折溢价与买卖价差。</div>
+
+<h2>5. 路径情景与覆盖率压力测试</h2>
+<p>期末涨跌不足以描述卖Call。两条都以指数+20%结束的路径，一条平滑上涨、一条先跌后V形反弹，策略结果可能截然不同，因为每次滚仓都会重新设定上限。</p>
+<figure><img src="charts/07_four_paths.png"><figcaption>固定参数机制测试。现金财富是NAV加累计现金，不含现金再投资收益；不能视为预期回报。</figcaption></figure>
+<table><thead><tr><th>85%覆盖，12个月末</th><th>指数</th><th>除息后NAV</th><th>NAV+累计现金</th></tr></thead><tbody><tr><td>震荡</td><td>101.7</td><td>92.3</td><td>117.0</td></tr>
+<tr><td>持续上涨</td><td>142.6</td><td>107.7</td><td>132.4</td></tr>
+<tr><td>持续下跌</td><td>69.4</td><td>66.8</td><td>91.5</td></tr>
+<tr><td>先跌后V形反弹</td><td>126.8</td><td>76.3</td><td>100.9</td></tr></tbody></table>
+<figure><img src="charts/08_coverage_scenarios.png"><figcaption>覆盖率越高，持续上涨和V形反弹的NAV恢复越差；在持续下跌路径中，三种覆盖率相近，因为Call大多到期无价值，尾部风险由指数多头主导。</figcaption></figure>
+<table>
+<thead><tr><th>环境</th><th>期权结果</th><th>NAV倾向</th><th>2802适配</th></tr></thead>
+<tbody>
+<tr><td>高隐含波动、低实现波动、横盘</td><td>权利金高、赔付低</td><td>最有机会覆盖分派</td><td class="yes">最佳</td></tr>
+<tr><td>温和上涨、不持续越过行权价</td><td>部分权利金保留</td><td>可稳定或缓升</td><td class="conditional">尚可</td></tr>
+<tr><td>持续大牛市</td><td>Call赔付高、上涨被截断</td><td>相对指数显著落后</td><td class="no">差</td></tr>
+<tr><td>持续下跌</td><td>权利金缓冲有限</td><td>与指数一同下跌并继续除息</td><td class="no">差</td></tr>
+<tr><td>先跌后V形反弹</td><td>低位新Call再次截断反弹</td><td>最难修复</td><td class="no">最差之一</td></tr>
+</tbody></table>
+
+<h2>6. 竞争产品与替代方案</h2>
+<figure><img src="charts/09_peer_map.png"><figcaption>圆点大小近似AUM；不同地区费用口径、币种和目标并不完全一致，只用于定位，不用于排名。</figcaption></figure>
+<table>
+<thead><tr><th>产品</th><th>费用/规模</th><th>策略与分派</th><th>相对2802的意义</th></tr></thead>
+<tbody>
+<tr><td><b>3416</b><br>Global X HSCEI Covered Call</td><td>0.75%；2026-07-16约224.52亿港元</td><td>同一HSCEI、70%-100%覆盖、月派；港元/美元/人民币柜台</td><td><b>首要替代。</b>费用低45bp、历史更长、规模更大、披露期权名义金额更清楚。</td></tr>
+<tr><td><b>3417 / 3419</b></td><td>均0.75%；约29.30/20.04亿港元</td><td>分别覆盖HSTECH/HSI</td><td>不是同Beta；用来选择科技高波动或更广HSI敞口。</td></tr>
+<tr><td><b>KLIP</b></td><td>0.95%；约1.006亿美元</td><td>KWEB全覆盖倾向；分派率23.01%，SEC yield 8.51%</td><td>中国互联网集中度更高；高分派与ROC并存，不能作为本金稳定证据。</td></tr>
+<tr><td><b>0094L0 / 0128D0</b></td><td>韩国；目标权利金12%/15%</td><td>动态、小比例周度覆盖；0094L0平均卖出约15%，争取约85%上涨参与</td><td>展示另一条设计路径：降低“派息目标”，换取更高上涨参与。</td></tr>
+<tr><td><b>2828</b></td><td>0.66% ongoing；约229.91亿港元</td><td>被动HSCEI，半年派</td><td><b>看多中国复苏更直接。</b>没有Call上限，费用更低。</td></tr>
+<tr><td><b>3110</b></td><td>0.68%；2026-05约7.89亿美元</td><td>恒生高股息股票，不卖Call，半年派</td><td>需要股息型权益现金流、又不愿系统性卖上涨权时更直接。</td></tr>
+<tr><td><b>货币市场/短债ETF</b></td><td>视产品而定</td><td>利息收入、低权益Beta</td><td>若目标是真正本金稳定和可预测收入，风险来源更匹配；收益率不会接近24%。</td></tr>
+</tbody></table>
+
+<h3>2802与3416的费用差</h3>
+<p>1.20%-0.75%=45bp。以2802 91.57亿港元AUM计算，每年约4,120万港元额外拖累。若持有三年且规模与费率不变，未计复利约1.35个百分点。除非2802主动执行带来的净增值持续超过这45bp，否则同策略选择3416更合理。</p>
+<p>3416也不是没有同类路径风险：其2026-07-16披露的期权名义金额合计约为NAV的105.5%，多数同样是7月30日C7700，显示潜在上涨0%。相较之下，它的优势是把名义金额和NAV占比公开得更清楚，而不是策略本身更安全。</p>
+
+<h3>普通国指ETF + 定期卖单位取现</h3>
+<p>投资者可以持有2828，并按月卖出约2%的单位作为现金流。这样同样会减少持有单位，但不会把上涨权永久卖给期权买方。2802的潜在额外价值只有两项：波动率风险溢价和专业化执行；代价是1.20%费用、上行截断、滚仓路径依赖和透明度不足。若未来实盘不能在风险调整后持续优于“2828 + 自定提款”，高分派包装本身没有价值。</p>
+
+<h2>7. 风险清单与监控框架</h2>
+<table>
+<thead><tr><th>监控项</th><th>为什么重要</th><th>红旗</th></tr></thead>
+<tbody>
+<tr><td>分派再投资总回报</td><td>唯一可与指数、公平替代比较的回报</td><td>12个月持续落后HSCEI且下行保护有限</td></tr>
+<tr><td>NAV与每单位分派</td><td>固定金额在NAV下降时抬高表面分派率</td><td>NAV新低而仍机械维持0.15</td></tr>
+<tr><td>Call行权价/到期日/覆盖率</td><td>决定即时Delta和上涨捕获</td><td>持续深度价内、覆盖接近100%、披露不完整</td></tr>
+<tr><td>毛权利金与Call结算损失</td><td>二者净额才是期权经济收益</td><td>只宣传权利金，不披露赔付/滚仓损益</td></tr>
+<tr><td>折溢价与买卖价差</td><td>影响二级市场实际回报</td><td>限制申购、做市减少、持续溢价</td></tr>
+<tr><td>规模、保证金、OTC与证券借贷</td><td>快速扩张增加容量和对手方管理难度</td><td>保证金异常上升、期权覆盖偏离目标、申购暂停</td></tr>
+<tr><td>3416相对表现</td><td>最接近、费用更低的执行基准</td><td>2802没有稳定45bp以上净执行优势</td></tr>
+</tbody></table>
+
+<h2>8. 最终投资决策矩阵</h2>
+<table>
+<thead><tr><th>投资者画像</th><th>2802</th><th>首选动作</th><th>更匹配的替代</th></tr></thead>
+<tbody>
+<tr><td>长期总回报、看好中国1-3年复苏</td><td class="no">不适合</td><td>避免用高分派替代上涨敞口</td><td>2828或其他低费国指ETF</td></tr>
+<tr><td>需要本金稳定、现金流可预测</td><td class="no">不适合</td><td>不要把资本分派当利息</td><td>货币市场或短久期债券ETF</td></tr>
+<tr><td>需要股票股息，但希望保留上涨</td><td class="no">不优</td><td>用真实股息率和盈利质量筛选</td><td>3110等高股息ETF</td></tr>
+<tr><td>判断未来3-6个月震荡、高IV低RV</td><td class="conditional">可小仓位</td><td>等滚仓后确认行权价/覆盖率；设总回报止损</td><td>3416，或自建低覆盖Call</td></tr>
+<tr><td>预期大牛市或V形反弹</td><td class="no">回避</td><td>不要在深度价内Call阶段追买</td><td>普通指数ETF</td></tr>
+<tr><td>能自己交易期权、愿意主动管理</td><td class="conditional">价值有限</td><td>比较自建策略的佣金、保证金与税务</td><td>2828 + 低比例/OTM Call</td></tr>
+</tbody></table>
+<div class="verdict"><strong>总评：</strong>2802可以是“主动卖波动率的卫星工具”，不能被当作“24%收益的收息核心”。当前深度价内Call快照下，等待下一次滚仓比抢除息更合理；同策略首选比较3416。只有当投资者明确判断震荡、接受NAV波动与分派下调，并持续监控净期权收益时，2802才有小仓位的投资逻辑。</div>
+
+<section class="pagebreak">
+<h2>附录A：数据局限与口径</h2>
+<ul>
+<li>2802自2025-12成立，约7个月实盘；截至研究日没有已发布的审计年报或中报。首个中期会计期截至2026-06-30，首个年度截至2026-12-31。</li>
+<li>2026年1-5月分派构成来自未经审计管理账；6-7月构成尚未发布。</li>
+<li>2802未充分公开当前期权名义金额、覆盖率、Delta和NAV占比，当前仓位判断只能定性或给出范围。</li>
+<li>动态AUM、NAV、指数、期权仓位和年化分派率均为2026-07-16快照；滚仓后会改变。</li>
+<li>同一截止日优先使用发行人NAV-to-NAV、分派再投资口径。不同发行人事实表日期不同，不把未经对齐的回报做精确排名。</li>
+<li>情景图假设每月ATM滚仓、2%毛权利金、3.14%股息、1.20%费用和固定0.15港元分派。实际隐含波动率、期权Delta、提前滚仓、税费和交易成本会改变结果。</li>
+<li>“资本分派”是会计/税务分类，不足以单独判断经济损益；报告同时展示NAV、取现财富和再投资总回报。</li>
+</ul>
+
+<h2>附录B：关键官方来源</h2>
+<ol class="source-list">
+<li><a href="https://www.csopasset.com/en/products/hk-hcecc">CSOP 2802产品页</a>：NAV、AUM、分派率、持仓、期权快照、官方表现与分派构成。</li>
+<li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0626/2026062600834.pdf">2802最新英文招募说明书（HKEX）</a>：投资范围、覆盖率、期权、保证金、证券借贷、申赎与风险。</li>
+<li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0429/2026042902202.pdf">2802上市类别KFS</a>：费用、主动ETF性质、分派风险、交易资料。</li>
+<li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0716/2026071600793.pdf">2802 2026年7月分派公告</a>：0.15港元、除息与付款日。</li>
+<li><a href="https://www.hsi.com.hk/static/uploads/contents/en/dl_centre/factsheets/hsceie.pdf">恒生中国企业指数事实表</a>：2026-06-30表现、股息率与历史波动率。</li>
+<li><a href="https://ifp.hkex.com.hk/fund/BWZ967">SFC/HKEX基金资料平台</a>：授权状态及基本资料。</li>
+<li><a href="https://www.globalxetfs.com.hk/funds/hscei-covered-call-etf/">Global X 3416产品页</a>及<a href="https://investments.miraeasset.com.hk/docs/ETF/eKFS-18-Global-X-HSCEI-Covered-Call-Active-ETF_listed.pdf?v=6">最新KFS</a>：覆盖率、期权名义金额、费用、三柜台与表现。</li>
+<li><a href="https://www.hangsenginvestment.com/cms/ivp/hsvm/document/etf_h_shares_en.pdf">2828官方事实表</a>与<a href="https://www.hangsenginvestment.com/cms/ivp/hsvm/document/2828_kfs_e.pdf">KFS</a>：被动HSCEI替代。</li>
+<li><a href="https://investments.miraeasset.com.hk/docs/ETF/3110e.pdf?v=6">3110官方事实表</a>：高股息替代。</li>
+<li><a href="https://kraneshares.com/resources/factsheet/klip_factsheet.pdf">KLIP事实表</a>、<a href="https://www.riseetf.co.kr/prod/finderDetail/44J1">RISE 0094L0</a>、<a href="https://www.plusetf.co.kr/product/detail?n=006394">PLUS 0128D0</a>：海外覆盖率设计对照。</li>
+</ol>
+<p class="footer-note">本地证据包另含48份已校验官方PDF、双语2802文件、逐月分派公告、SHA-256、页数与下载URL索引。报告生成数据位于output/2802/data。</p>
+</section>
+
+</body></html>
