@@ -1,4 +1,5 @@
 import "./store.js?v=20260813-2";
+import { setupCommandCenter } from "./commands.js";
 
 const root = new URL("../", import.meta.url);
 window.BB_ROOT = root;
@@ -114,6 +115,7 @@ function bindShell() {
   document.getElementById("open-sidebar")?.addEventListener("click", () => document.body.classList.add("sidebar-open"));
   document.getElementById("close-sidebar")?.addEventListener("click", () => document.body.classList.remove("sidebar-open"));
   document.getElementById("export-store")?.addEventListener("click", exportStore);
+  setupCommandCenter({ navigate: navigateTo });
   document.getElementById("global-search")?.addEventListener("input", event => window.dispatchEvent(new CustomEvent("bb:search", { detail: event.target.value })));
   document.getElementById("add-record")?.addEventListener("click", () => window.dispatchEvent(new CustomEvent("bb:add-record")));
   window.addEventListener("popstate", () => {

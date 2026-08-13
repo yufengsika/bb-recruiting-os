@@ -6,6 +6,15 @@ let selectedResume = "ibd";
 let selectedExperience = "dbs";
 let selectedProject = "lf-origination";
 let language = "both";
+function experienceFromUrl(state) {
+  const requested = new URL(location.href).searchParams.get("experience");
+  return state.experiences.some(item => item.id === requested) ? requested : "";
+}
+function updateExperienceUrl() {
+  const url = new URL(location.href);
+  url.searchParams.set("experience", selectedExperience);
+  history.replaceState({ ...history.state, route: "resume", experience: selectedExperience }, "", url);
+}
 
 function renderStory(bullet) {
   return `<article class="bullet-block"><div class="small muted">BULLET</div><div class="bullet-text">${escapeHtml(bullet.text || bullet.en || "")}</div>${language !== "zh" && bullet.en ? `<div class="story-block"><strong>English story</strong><p>${escapeHtml(bullet.en)}</p></div>` : ""}${language !== "en" && bullet.zh ? `<div class="story-block" style="border-color:var(--green);background:var(--green-soft)"><strong>中文故事</strong><p>${escapeHtml(bullet.zh)}</p></div>` : ""}</article>`;
@@ -54,12 +63,18 @@ function render() {
 
 export function mount(target) {
   outlet = target;
+  const state = window.BBStore.getSnapshot();
+  const requestedExperience = experienceFromUrl(state);
+  if (requestedExperience) {
+    selectedExperience = requestedExperience;
+    selectedResume = state.resumes.find(resume => resume.experienceIds?.includes(requestedExperience))?.id || selectedResume;
+  }
   render();
   onClick = event => {
     const resume = event.target.closest("[data-resume]");
     if (resume) { selectedResume = resume.dataset.resume; render(); return; }
     const experience = event.target.closest("[data-experience]");
-    if (experience) { selectedExperience = experience.dataset.experience; selectedProject = "lf-origination"; render(); return; }
+    if (experience) { selectedExperience = experience.dataset.experience; selectedProject = "lf-origination"; updateExperienceUrl(); render(); return; }
     const project = event.target.closest("[data-project]");
     if (project) { selectedProject = project.dataset.project; render(); return; }
     const languageButton = event.target.closest("[data-language]");

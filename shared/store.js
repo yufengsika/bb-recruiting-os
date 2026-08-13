@@ -281,6 +281,32 @@ function dispatch(action) {
     const task = state.tasks.find(item => item.id === action.taskId);
     if (task) { task.done = action.done ?? !task.done; task.updatedByUser = true; }
   }
+  if (action.type === "task.created") {
+    const task = action.task;
+    if (task?.id && task.title && task.date && !state.tasks.some(item => item.id === task.id)) {
+      state.tasks.push({
+        ...clone(task),
+        sourceType: "manual",
+        sourceId: task.sourceId || task.id,
+        done: Boolean(task.done),
+        updatedByUser: true,
+        createdAt: new Date().toISOString()
+      });
+    }
+  }
+  if (action.type === "task.created") {
+    const task = action.task;
+    if (task?.id && task.title && task.date && !state.tasks.some(item => item.id === task.id)) {
+      state.tasks.push({
+        ...clone(task),
+        sourceType: "manual",
+        sourceId: task.sourceId || task.id,
+        done: Boolean(task.done),
+        updatedByUser: true,
+        createdAt: new Date().toISOString()
+      });
+    }
+  }
   if (action.type === "answer.saved") {
     const key = `${action.questionId}::${action.scope || "general"}`;
     state.answers[key] = { ...(state.answers[key] || {}), questionId: action.questionId, scope: action.scope || "general", answer: action.answer || "", notes: action.notes || state.answers[key]?.notes || "", status: action.status || state.answers[key]?.status || "draft", updatedAt: new Date().toISOString() };
