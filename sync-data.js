@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026080901,
-  checkedAt: "2026-08-09T09:12:46+08:00",
+  version: 2026081301,
+  checkedAt: "2026-08-13T11:04:57+08:00",
   correctedAt: "2026-08-09T09:12:46+08:00",
-  summary: "Incremental and full reconciliation through 2026-08-09 09:12 HKT: J.P. Morgan confirmed receipt of the Markets video interview at 09:50 HKT on 2026-08-06; this was a correction to the prior pending state. Bank of America confirmed completion of the Global Investment Banking VI for application 4739429 at 15:04 HKT on 2026-08-08 and the Global Markets Sales & Trading Rotational VI for application 4757966 at 15:55 HKT; both were completed before their 16:55 and 16:10 HKT hard deadlines. Jefferies Investment Banking remains shortlisted for a first-round interview and is awaiting a coordination call. HSBC's OA remains due 2026-08-10 10:16 HKT. Tencent's comprehensive assessment remains expired from 2026-08-07 18:48 HKT. The 14-day company and keyword reconciliation found no other high-confidence changes; marketing, event, and generic recruitment emails were excluded.",
+  summary: "Incremental and full reconciliation through 2026-08-13 11:04 HKT: HSBC confirmed completion of the Online Immersive Assessment at 00:31 HKT on 2026-08-11 and invited the Investment Banking candidate to a Job Simulation with video responses, due within 10 days of the 2026-08-10 07:50 HKT invitation (official deadline 2026-08-20 07:50 HKT). Morgan Stanley invited the 2027 Global Capital Markets Hong Kong application to a 10-minute HireVue, complete by 2026-08-13. Jefferies confirmed two first-round Zoom conversations on 2026-08-25: Jeffrey Hui from 10:30 to 11:00 HKT and Hester He from 11:00 to 11:30 HKT. No other high-confidence application or assessment changes were found in the incremental search and 14-day company/keyword reconciliation; marketing and event emails were excluded.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -120,7 +120,7 @@ window.BB_SYNC_DATA = {
       division: "Global Capital Markets",
       role: "2027 Global Capital Markets Industrial Placement / Summer Analyst Program",
       location: "Hong Kong",
-      status: "Applied",
+      status: "VI Pending",
       applied: "2026-08-01",
       channel: "Morgan Stanley Careers",
       ref: "",
@@ -133,7 +133,7 @@ window.BB_SYNC_DATA = {
       division: "Investment Banking",
       role: "Investment Banking - Internship",
       location: "",
-      status: "OT Pending",
+      status: "VI Pending",
       applied: "2026-07-28",
       channel: "HSBC Careers",
       ref: "",
@@ -199,11 +199,34 @@ window.BB_SYNC_DATA = {
       appId: "hsbc-investment-banking-internship",
       type: "OT",
       platform: "HSBC Online Immersive Assessment",
-      status: "Not Started",
+      status: "Confirmed",
       received: "2026-07-31T10:16",
       deadline: "2026-08-10T10:16",
-      original: "Next step: your HSBC Online Immersive Assessment; received 2026-07-31 10:16 HKT for Investment Banking - Internship; email states 'You have 10 days to complete the assessment'; not timed once started and usually takes about 50 minutes",
+      original: "Next step: your HSBC Online Immersive Assessment; received 2026-07-31 10:16 HKT for Investment Banking - Internship; email states 'You have 10 days to complete the assessment'; completion confirmed by HSBC Feedback Report received 2026-08-11 00:31 HKT",
+      urgency: "done",
+      completionSource: "email"
+    },
+    {
+      id: "hsbc-investment-banking-job-simulation",
+      appId: "hsbc-investment-banking-internship",
+      type: "VI",
+      platform: "HSBC Job Simulation · Cappfinity",
+      status: "Not Started",
+      received: "2026-08-10T07:50:00+08:00",
+      deadline: "2026-08-20T07:50:00+08:00",
+      original: "Investment Banking - Internship · Job Simulation includes video interview questions; email received 2026-08-10 07:50 HKT states 'You have 10 days to complete the assessment'; not timed and usually takes about 30 minutes",
       urgency: "warning"
+    },
+    {
+      id: "ms-gcm-2027-hk-vi",
+      appId: "ms-gcm-2027-hk",
+      type: "VI",
+      platform: "Morgan Stanley HireVue",
+      status: "Not Started",
+      received: "2026-08-11T17:25:00+08:00",
+      deadline: "2026-08-13T23:59:00+08:00",
+      original: "2027 Global Capital Markets Industrial Placement / Summer Analyst Program (Hong Kong) · estimated duration 10 minutes · email states COMPLETE BY: 13 August 2026; no exact time stated, so end of Hong Kong calendar day is used with this caveat",
+      urgency: "danger"
     },
     {
       id: "ubs-gb-vi",
@@ -325,7 +348,48 @@ window.BB_SYNC_DATA = {
       shortTitle: "HSBC IBD OA",
       category: "OT",
       assessmentId: "hsbc-investment-banking-ot",
-      note: "邀请于 2026-07-31 10:16 HKT 收到 · 邮件明确要求 10 天内完成 · 官方截止 2026-08-10 10:16 HKT · 开始后不计时，预计约 50 分钟"
+      note: "邀请于 2026-07-31 10:16 HKT 收到 · 邮件明确要求 10 天内完成 · 2026-08-11 00:31 HKT 收到 HSBC Feedback Report，确认已完成",
+      done: true
+    },
+    {
+      id: "cal-hsbc-investment-banking-job-simulation",
+      date: "2026-08-20",
+      time: "07:50",
+      title: "完成 HSBC Investment Banking Job Simulation",
+      shortTitle: "HSBC IBD Job Simulation",
+      category: "VI",
+      assessmentId: "hsbc-investment-banking-job-simulation",
+      note: "邀请于 2026-08-10 07:50 HKT 收到 · 包含 video interview questions · 邮件明确要求 10 天内完成 · 官方截止 2026-08-20 07:50 HKT · 不计时，预计约 30 分钟",
+      hardDeadline: true
+    },
+    {
+      id: "cal-ms-gcm-2027-hk-vi",
+      date: "2026-08-13",
+      time: "23:59",
+      title: "完成 Morgan Stanley Global Capital Markets VI",
+      shortTitle: "MS GCM VI",
+      category: "VI",
+      assessmentId: "ms-gcm-2027-hk-vi",
+      note: "邀请于 2026-08-11 17:25 HKT 收到 · 预计 10 分钟 · 邮件只写 COMPLETE BY: 13 August 2026，未给具体时间；日历暂按香港当日 23:59 展示",
+      hardDeadline: true
+    },
+    {
+      id: "cal-jefferies-ib-first-round-1",
+      date: "2026-08-25",
+      time: "10:30",
+      title: "Jefferies IBD 一面 1/2 · Jeffrey Hui",
+      shortTitle: "Jefferies 一面 1/2",
+      category: "Interview",
+      note: "Virtual Zoom · Jeffrey Hui, Associate - Investment Banking - Hong Kong · 10:30-11:00 HKT · Business Casual · 建议提前 10 分钟登录"
+    },
+    {
+      id: "cal-jefferies-ib-first-round-2",
+      date: "2026-08-25",
+      time: "11:00",
+      title: "Jefferies IBD 一面 2/2 · Hester He",
+      shortTitle: "Jefferies 一面 2/2",
+      category: "Interview",
+      note: "Virtual Zoom · Hester He, Associate - Investment Banking - Hong Kong · 11:00-11:30 HKT · Business Casual · 建议提前 10 分钟登录"
     },
     {
       id: "cal-ubs-am-vi",
