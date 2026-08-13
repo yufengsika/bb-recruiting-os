@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026081301,
-  checkedAt: "2026-08-13T11:04:57+08:00",
+  version: 2026081302,
+  checkedAt: "2026-08-13T09:14:36+08:00",
   correctedAt: "2026-08-09T09:12:46+08:00",
-  summary: "Incremental and full reconciliation through 2026-08-13 11:04 HKT: HSBC confirmed completion of the Online Immersive Assessment at 00:31 HKT on 2026-08-11 and invited the Investment Banking candidate to a Job Simulation with video responses, due within 10 days of the 2026-08-10 07:50 HKT invitation (official deadline 2026-08-20 07:50 HKT). Morgan Stanley invited the 2027 Global Capital Markets Hong Kong application to a 10-minute HireVue, complete by 2026-08-13. Jefferies confirmed two first-round Zoom conversations on 2026-08-25: Jeffrey Hui from 10:30 to 11:00 HKT and Hester He from 11:00 to 11:30 HKT. No other high-confidence application or assessment changes were found in the incremental search and 14-day company/keyword reconciliation; marketing and event emails were excluded.",
+  summary: "Incremental and full reconciliation through 2026-08-13 09:14 HKT: HSBC confirmed completion of the Online Immersive Assessment at 00:31 HKT on 2026-08-11 and invited the Investment Banking candidate to a Job Simulation with video responses, due within 10 days of the 2026-08-10 07:50 HKT invitation (official deadline 2026-08-20 07:50 HKT). Morgan Stanley invited the 2027 Global Capital Markets Hong Kong application to a 10-minute HireVue, complete by 2026-08-13. Jefferies confirmed two first-round Zoom conversations on 2026-08-25: Jeffrey Hui from 10:30 to 11:00 HKT and Hester He from 11:00 to 11:30 HKT. No other high-confidence application or assessment changes were found in the incremental search and 14-day company/keyword reconciliation; marketing and event emails were excluded.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
