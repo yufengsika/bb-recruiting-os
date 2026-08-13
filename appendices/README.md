@@ -10,5 +10,5 @@
 | 2802 尽调 | [`csop/2802-covered-call/`](csop/2802-covered-call/) | 中文报告、数据、图表、官方资料和竞品资料 |
 | 产品矩阵 | [`csop/product-matrix/`](csop/product-matrix/) | 香港 63 产品矩阵及样例工作簿 |
 | 题库 | [`question-bank/`](question-bank/) | 原始题库与网站导出工作簿 |
-| 面试指南 | [`interview-guide/`](interview-guide/) | Structuring & Origination 面试指南 |
+| 面试指南 | [`interview-guide/`](interview-guide/) | DCF 通用复习、Jefferies 题库答案与 DBS LF 项目 DCF 深挖 |
 | 历史盘点 | [`research/DBS_CSOP_history_inventory.md`](research/DBS_CSOP_history_inventory.md) | 对话产出、项目归属和未完成事项 |

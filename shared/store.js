@@ -26,6 +26,35 @@ const statusGroups = {
 };
 
 const defaultAnswers = {
+  "CL0010::bank:Jefferies": {
+    questionId: "CL0010",
+    scope: "bank:Jefferies",
+    status: "ready",
+    source: "Jefferies question bank QB1622 / QB1635; DCF workshop transcript",
+    answer: `The three core methodologies are trading comparables, precedent transactions and DCF. Trading comparables apply the market multiples of similar listed companies and therefore reflect current minority-market pricing. Precedent transactions use multiples paid in comparable acquisitions and are often higher because they may include a control premium and expected synergies, although the result depends heavily on transaction timing and comparability. DCF is intrinsic: it values the company's own forecast free cash flow and is less directly tied to current market pricing, but it is highly sensitive to operating assumptions, WACC and terminal value.
+
+I would not assume a fixed ranking. Precedents often give the highest range and trading comps a lower range, but a DCF can be above or below both depending on the forecast and terminal assumptions. I would triangulate the methods and explain the drivers of any gap rather than average them mechanically.`
+  },
+  "CL0223::bank:Jefferies": {
+    questionId: "CL0223",
+    scope: "bank:Jefferies",
+    status: "ready",
+    source: "Jefferies question bank QB1626; DCF workshop transcript",
+    answer: `I would normally use unlevered free cash flow because it is capital-structure neutral. I would calculate it as EBIT after tax, plus D&A, less capex and the increase in net working capital. Since that cash flow is available to both debt and equity holders, I would discount it at WACC to arrive at enterprise value. I would then bridge from enterprise value to equity value by adding cash and other non-operating assets and subtracting debt and other debt-like claims.
+
+The two standard terminal-value methods are the perpetuity-growth method and the exit-multiple method. Under perpetuity growth, terminal value is next year's free cash flow divided by WACC minus the long-term growth rate. Under the exit-multiple method, I apply a selected trading multiple, usually EV/EBITDA, to the terminal-year metric. I would use one as the primary method and the other as a cross-check.
+
+If I used levered free cash flow instead, I would discount it at the cost of equity and arrive directly at equity value.`
+  },
+  "CL0572::bank:Jefferies": {
+    questionId: "CL0572",
+    scope: "bank:Jefferies",
+    status: "ready",
+    source: "Jefferies question bank QB1619; DBS LF logistics IPO pitch materials",
+    answer: `Yes. At DBS Asia Capital, I supported the valuation workstream for a potential Hong Kong capital-markets client in the supply-chain sector. I first analysed the historical income statement, balance sheet and cash flow statement, then built a five-year operating forecast. The base case assumed low-single-digit revenue growth and gradual EBIT-margin recovery, which I used to project taxes, D&A, capital expenditure and working capital and derive unlevered free cash flow.
+
+I discounted those cash flows at a WACC of approximately 9.8% and calculated terminal value using a 2% perpetual-growth rate. I also built bear and bull cases around customer conversion, margin progression and cash conversion, and cross-checked the result against a 7.0 times exit EV-to-EBITDA multiple and trading comparables. The main judgement was translating the company’s supply-chain network and technology-enabled efficiency story into assumptions that public investors could underwrite without treating it as a software business. My role was to build and review the analysis and make the valuation logic presentation-ready; senior bankers retained ownership of the final client recommendation and valuation range.`
+  },
   "CL1255::general": {
     questionId: "CL1255",
     scope: "general",
@@ -161,6 +190,45 @@ function load() {
   if (!state.migrations.personalInvestmentAnswerV1) {
     state.answers["CL1255::general"] = clone(defaultAnswers["CL1255::general"]);
     state.migrations.personalInvestmentAnswerV1 = true;
+    changed = true;
+  }
+  if (!state.migrations.jefferiesDcfAnswersV1) {
+    for (const [key, answer] of Object.entries(defaultAnswers)) {
+      if (answer.scope === "bank:Jefferies" && !state.answers[key]) state.answers[key] = clone(answer);
+    }
+    state.migrations.jefferiesDcfAnswersV1 = true;
+    changed = true;
+  }
+  if (!state.migrations.jefferiesDcfModellingAnswerV2) {
+    state.answers["CL0572::bank:Jefferies"] = clone(defaultAnswers["CL0572::bank:Jefferies"]);
+    state.migrations.jefferiesDcfModellingAnswerV2 = true;
+    changed = true;
+  }
+  if (!state.migrations.liFungDcfInterviewPackV1) {
+    const prep = loadPrep();
+    const sourceExperience = prep.experiences.find(item => item.id === "dbs");
+    const currentExperience = state.experiences.find(item => item.id === "dbs");
+    const sourceFollowup = sourceExperience?.followups.find(item => item.q === "Walk me through the DCF and key sensitivities.");
+    const currentFollowup = currentExperience?.followups.find(item => item.q === "Walk me through the DCF and key sensitivities.");
+    if (sourceFollowup && currentFollowup) Object.assign(currentFollowup, clone(sourceFollowup));
+    const sourceTodo = prep.todos.find(item => item.id === "dcf");
+    const currentTodo = state.todos.find(item => item.id === "dcf");
+    if (sourceTodo && currentTodo) Object.assign(currentTodo, clone(sourceTodo));
+    state.migrations.liFungDcfInterviewPackV1 = true;
+    changed = true;
+  }
+  if (!state.migrations.dbsProjectSplitV1) {
+    const prep = loadPrep();
+    const sourceExperience = prep.experiences.find(item => item.id === "dbs");
+    const currentExperience = state.experiences.find(item => item.id === "dbs");
+    if (sourceExperience && currentExperience) {
+      currentExperience.projects = clone(sourceExperience.projects || []);
+      currentExperience.followups = [];
+    }
+    const sourceTodo = prep.todos.find(item => item.id === "dcf");
+    const currentTodo = state.todos.find(item => item.id === "dcf");
+    if (sourceTodo && currentTodo) Object.assign(currentTodo, clone(sourceTodo));
+    state.migrations.dbsProjectSplitV1 = true;
     changed = true;
   }
   const currentSync = window.BB_SYNC_DATA || { version: 0 };

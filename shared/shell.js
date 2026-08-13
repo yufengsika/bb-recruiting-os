@@ -1,4 +1,4 @@
-import "./store.js";
+import "./store.js?v=20260813-2";
 
 const root = new URL("../", import.meta.url);
 window.BB_ROOT = root;
@@ -63,7 +63,7 @@ function updateChrome(key) {
 }
 async function loadModule(key) {
   const moduleUrl = new URL(`../pages/${routes[key].module}`, import.meta.url).href;
-  return import(`${moduleUrl}?v=20260812-1`);
+  return import(`${moduleUrl}?v=20260813-2`);
 }
 async function mountRoute(key, html, options = {}) {
   const token = ++navigationToken;
