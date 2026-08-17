@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026081302,
-  checkedAt: "2026-08-13T09:14:36+08:00",
-  correctedAt: "2026-08-09T09:12:46+08:00",
-  summary: "Incremental and full reconciliation through 2026-08-13 09:14 HKT: HSBC confirmed completion of the Online Immersive Assessment at 00:31 HKT on 2026-08-11 and invited the Investment Banking candidate to a Job Simulation with video responses, due within 10 days of the 2026-08-10 07:50 HKT invitation (official deadline 2026-08-20 07:50 HKT). Morgan Stanley invited the 2027 Global Capital Markets Hong Kong application to a 10-minute HireVue, complete by 2026-08-13. Jefferies confirmed two first-round Zoom conversations on 2026-08-25: Jeffrey Hui from 10:30 to 11:00 HKT and Hester He from 11:00 to 11:30 HKT. No other high-confidence application or assessment changes were found in the incremental search and 14-day company/keyword reconciliation; marketing and event emails were excluded.",
+  version: 2026081801,
+  checkedAt: "2026-08-18T06:00:03+08:00",
+  correctedAt: "2026-08-18T06:00:03+08:00",
+  summary: "Incremental and full Outlook reconciliation through 2026-08-18 06:00 HKT. Correction: Morgan Stanley Global Capital Markets VI completion received 2026-08-13 15:20 HKT and Investment Banking VI completion received 2026-08-16 03:20 HKT; both are now marked completed. Bank of America also sent an additional Global Investment Banking VI completion confirmation for application 4739429 on 2026-08-14. Barclays has an application confirmation and online-assessment invitation but no withdrawal evidence; its expired assessment is retained as OT Expired. HSBC Job Simulation remains due 2026-08-20 07:50 HKT. Citi questionnaire remains pending without an official deadline. UBS, JPMorgan, Goldman Sachs and Jefferies results were reconciled; marketing, event and career-news emails were excluded.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -94,7 +94,7 @@ window.BB_SYNC_DATA = {
       division: "Investment Banking",
       role: "2027 Investment Banking Industrial Placement / Summer Analyst Program",
       location: "Hong Kong / Singapore / Seoul",
-      status: "Applied",
+      status: "VI Completed",
       applied: "2026-08-01",
       channel: "Morgan Stanley Careers",
       ref: "",
@@ -120,7 +120,7 @@ window.BB_SYNC_DATA = {
       division: "Global Capital Markets",
       role: "2027 Global Capital Markets Industrial Placement / Summer Analyst Program",
       location: "Hong Kong",
-      status: "VI Pending",
+      status: "VI Completed",
       applied: "2026-08-01",
       channel: "Morgan Stanley Careers",
       ref: "",
@@ -159,7 +159,7 @@ window.BB_SYNC_DATA = {
       division: "Investment Banking",
       role: "Investment Banking Summer Internship Programme",
       location: "",
-      status: "Withdrawn",
+      status: "OT Expired",
       applied: "2026-07-30",
       channel: "Barclays Workday",
       ref: "JR-0000117558",
@@ -222,11 +222,26 @@ window.BB_SYNC_DATA = {
       appId: "ms-gcm-2027-hk",
       type: "VI",
       platform: "Morgan Stanley HireVue",
-      status: "Not Started",
+      status: "Confirmed",
       received: "2026-08-11T17:25:00+08:00",
       deadline: "2026-08-13T23:59:00+08:00",
-      original: "2027 Global Capital Markets Industrial Placement / Summer Analyst Program (Hong Kong) · estimated duration 10 minutes · email states COMPLETE BY: 13 August 2026; no exact time stated, so end of Hong Kong calendar day is used with this caveat",
-      urgency: "danger"
+      urgency: "done",
+      completionSource: "email",
+      completionReceived: "2026-08-13T15:20:00+08:00",
+      original: "2027 Global Capital Markets Industrial Placement / Summer Analyst Program (Hong Kong) · estimated duration 10 minutes · email states COMPLETE BY: 13 August 2026; no exact time stated, so end of Hong Kong calendar day is used with this caveat · completion confirmation received 2026-08-13 15:20 HKT stating 'Thank you for submitting your virtual interview'"
+    },
+    {
+      id: "ms-ib-2027-hk-sg-seoul-vi",
+      appId: "ms-ib",
+      type: "VI",
+      platform: "Morgan Stanley HireVue",
+      status: "Confirmed",
+      received: "2026-08-14T15:50:00+08:00",
+      deadline: "2026-08-16T23:59:00+08:00",
+      original: "2027 Investment Banking Industrial Placement / Summer Analyst Program (Hong Kong / Singapore / Seoul) · estimated duration 10 minutes · email states COMPLETE BY: 16 August 2026; no exact time stated, so end of Hong Kong calendar day is used with this caveat · completion confirmation received 2026-08-16 03:20 HKT stating 'Thank you for submitting your virtual interview'",
+      urgency: "done",
+      completionSource: "email",
+      completionReceived: "2026-08-16T03:20:00+08:00"
     },
     {
       id: "ubs-gb-vi",
@@ -313,8 +328,9 @@ window.BB_SYNC_DATA = {
       status: "Confirmed",
       received: "2026-08-05T16:55:00+08:00",
       deadline: "2026-08-08T16:55:00+08:00",
-      original: "Application ID 4739429 · Global Investment Banking Summer Analyst - 2027 - Hong Kong · email states complete no later than 3 days (72 hours) from the exact time of the invitation; completion confirmation received 2026-08-08 15:04 HKT stating the interview was received",
-      urgency: "done"
+      original: "Application ID 4739429 · Global Investment Banking Summer Analyst - 2027 - Hong Kong · email states complete no later than 3 days (72 hours) from the exact time of the invitation; completion confirmation received 2026-08-08 15:04 HKT stating the interview was received; an additional Bank of America Video Interview Complete confirmation was received on 2026-08-14",
+      urgency: "done",
+      completionReconfirmed: "2026-08-14"
     },
     {
       id: "bofa-4757966-vi",
@@ -370,8 +386,21 @@ window.BB_SYNC_DATA = {
       shortTitle: "MS GCM VI",
       category: "VI",
       assessmentId: "ms-gcm-2027-hk-vi",
-      note: "邀请于 2026-08-11 17:25 HKT 收到 · 预计 10 分钟 · 邮件只写 COMPLETE BY: 13 August 2026，未给具体时间；日历暂按香港当日 23:59 展示",
-      hardDeadline: true
+      note: "邀请于 2026-08-11 17:25 HKT 收到 · 预计 10 分钟 · 邮件只写 COMPLETE BY: 13 August 2026，未给具体时间；日历暂按香港当日 23:59 展示 · 2026-08-13 15:20 HKT 收到完成确认",
+      hardDeadline: true,
+      done: true
+    },
+    {
+      id: "cal-ms-ib-2027-hk-sg-seoul-vi",
+      date: "2026-08-16",
+      time: "23:59",
+      title: "完成 Morgan Stanley Investment Banking VI",
+      shortTitle: "MS IBD VI",
+      category: "VI",
+      assessmentId: "ms-ib-2027-hk-sg-seoul-vi",
+      note: "邀请于 2026-08-14 15:50 HKT 收到 · 预计 10 分钟 · 邮件只写 COMPLETE BY: 16 August 2026，未给具体时间；日历暂按香港当日 23:59 展示 · 2026-08-16 03:20 HKT 收到完成确认",
+      hardDeadline: true,
+      done: true
     },
     {
       id: "cal-jefferies-ib-first-round-1",
@@ -493,7 +522,7 @@ window.BB_SYNC_DATA = {
       shortTitle: "BofA GIB VI",
       category: "VI",
       assessmentId: "bofa-gib-vi",
-      note: "邀请于 2026-08-05 16:55 HKT 收到；正文写明 3 days (72 hours) from the exact time of invitation，hard deadline 为 2026-08-08 16:55 HKT；完成确认于 2026-08-08 15:04 HKT 收到",
+      note: "邀请于 2026-08-05 16:55 HKT 收到；正文写明 3 days (72 hours) from the exact time of invitation，hard deadline 为 2026-08-08 16:55 HKT；完成确认于 2026-08-08 15:04 HKT 收到；2026-08-14 又收到 application 4739429 的 Video Interview Complete 确认",
       hardDeadline: true,
       done: true
     },
