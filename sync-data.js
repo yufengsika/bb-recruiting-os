@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026081801,
+  version: 2026081901,
   checkedAt: "2026-08-18T06:00:03+08:00",
-  correctedAt: "2026-08-18T06:00:03+08:00",
-  summary: "Incremental and full Outlook reconciliation through 2026-08-18 06:00 HKT. Correction: Morgan Stanley Global Capital Markets VI completion received 2026-08-13 15:20 HKT and Investment Banking VI completion received 2026-08-16 03:20 HKT; both are now marked completed. Bank of America also sent an additional Global Investment Banking VI completion confirmation for application 4739429 on 2026-08-14. Barclays has an application confirmation and online-assessment invitation but no withdrawal evidence; its expired assessment is retained as OT Expired. HSBC Job Simulation remains due 2026-08-20 07:50 HKT. Citi questionnaire remains pending without an official deadline. UBS, JPMorgan, Goldman Sachs and Jefferies results were reconciled; marketing, event and career-news emails were excluded.",
+  correctedAt: "2026-08-19T06:01:16+08:00",
+  summary: "Incremental and full Outlook reconciliation completed 2026-08-19 06:01 HKT. Correction from the 2026-08-05 BarclaysHCM message: Barclays explicitly states that the candidate withdrew the application for JR-0000117558 Investment Banking Summer Internship Programme 2027 Hong Kong (Evergreen) (Open); the application is now Withdrawn while its expired online assessment remains in history. The original checkedAt is retained because this is a correction to an earlier missed message. HSBC Job Simulation remains due 2026-08-20 07:50 HKT. Citi questionnaire remains pending without an official deadline. A Citi HK Open Day event email was excluded as event/marketing correspondence. Morgan Stanley, Bank of America, UBS, JPMorgan, Goldman Sachs and Jefferies were rechecked; no other high-confidence application or assessment changes were found.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -159,12 +159,15 @@ window.BB_SYNC_DATA = {
       division: "Investment Banking",
       role: "Investment Banking Summer Internship Programme",
       location: "",
-      status: "OT Expired",
+      status: "Withdrawn",
       applied: "2026-07-30",
       channel: "Barclays Workday",
       ref: "JR-0000117558",
       url: "",
-      logo: "assets/barclays.svg"
+      logo: "assets/barclays.svg",
+      withdrawnAt: "2026-08-05",
+      withdrawalSource: "BarclaysHCM email",
+      withdrawalReason: "Email states: We’re writing to acknowledge that you have withdrawn your application."
     },
     {
       id: "bofa-4757966",
