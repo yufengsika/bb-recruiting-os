@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026081901,
-  checkedAt: "2026-08-18T06:00:03+08:00",
+  version: 2026082001,
+  checkedAt: "2026-08-20T06:01:18+08:00",
   correctedAt: "2026-08-19T06:01:16+08:00",
-  summary: "Incremental and full Outlook reconciliation completed 2026-08-19 06:01 HKT. Correction from the 2026-08-05 BarclaysHCM message: Barclays explicitly states that the candidate withdrew the application for JR-0000117558 Investment Banking Summer Internship Programme 2027 Hong Kong (Evergreen) (Open); the application is now Withdrawn while its expired online assessment remains in history. The original checkedAt is retained because this is a correction to an earlier missed message. HSBC Job Simulation remains due 2026-08-20 07:50 HKT. Citi questionnaire remains pending without an official deadline. A Citi HK Open Day event email was excluded as event/marketing correspondence. Morgan Stanley, Bank of America, UBS, JPMorgan, Goldman Sachs and Jefferies were rechecked; no other high-confidence application or assessment changes were found.",
+  summary: "Incremental and full Outlook reconciliation completed 2026-08-20 06:01 HKT. New high-confidence item: Morgan Stanley invited the 2027 Institutional Equity Division Industrial Placement / Summer Analyst Program (Hong Kong / Singapore) to a HireVue received 2026-08-18 17:25 HKT, with COMPLETE BY: 23 August 2026; no exact time is stated, so 23:59 HKT is used with this caveat. Bank of America sent another Video Interview Complete confirmation on 2026-08-19 for Global Investment Banking application 4739429; its completed status is unchanged. No HSBC Job Simulation completion confirmation was found; its official deadline remains 2026-08-20 07:50 HKT. Citi questionnaire remains pending without an official deadline. Marketing and event emails were excluded. All tracked companies and required assessment/status keywords were rechecked across all folders.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -107,7 +107,7 @@ window.BB_SYNC_DATA = {
       division: "Institutional Equity Division",
       role: "2027 Institutional Equity Division Industrial Placement / Summer Analyst Program",
       location: "Hong Kong / Singapore",
-      status: "Applied",
+      status: "VI Pending",
       applied: "2026-07-31",
       channel: "Morgan Stanley Careers",
       ref: "",
@@ -218,7 +218,7 @@ window.BB_SYNC_DATA = {
       received: "2026-08-10T07:50:00+08:00",
       deadline: "2026-08-20T07:50:00+08:00",
       original: "Investment Banking - Internship · Job Simulation includes video interview questions; email received 2026-08-10 07:50 HKT states 'You have 10 days to complete the assessment'; not timed and usually takes about 30 minutes",
-      urgency: "warning"
+      urgency: "danger"
     },
     {
       id: "ms-gcm-2027-hk-vi",
@@ -245,6 +245,17 @@ window.BB_SYNC_DATA = {
       urgency: "done",
       completionSource: "email",
       completionReceived: "2026-08-16T03:20:00+08:00"
+    },
+    {
+      id: "ms-ied-2027-hk-sg-vi",
+      appId: "ms-ied-2027-hk-sg",
+      type: "VI",
+      platform: "Morgan Stanley HireVue",
+      status: "Not Started",
+      received: "2026-08-18T17:25:00+08:00",
+      deadline: "2026-08-23T23:59:00+08:00",
+      original: "2027 Institutional Equity Division Industrial Placement / Summer Analyst Program (Hong Kong / Singapore) · estimated duration 10 minutes · email states COMPLETE BY: 23 August 2026; no exact time stated, so end of Hong Kong calendar day is used with this caveat",
+      urgency: "warning"
     },
     {
       id: "ubs-gb-vi",
@@ -331,9 +342,9 @@ window.BB_SYNC_DATA = {
       status: "Confirmed",
       received: "2026-08-05T16:55:00+08:00",
       deadline: "2026-08-08T16:55:00+08:00",
-      original: "Application ID 4739429 · Global Investment Banking Summer Analyst - 2027 - Hong Kong · email states complete no later than 3 days (72 hours) from the exact time of the invitation; completion confirmation received 2026-08-08 15:04 HKT stating the interview was received; an additional Bank of America Video Interview Complete confirmation was received on 2026-08-14",
+      original: "Application ID 4739429 · Global Investment Banking Summer Analyst - 2027 - Hong Kong · email states complete no later than 3 days (72 hours) from the exact time of the invitation; completion confirmation received 2026-08-08 15:04 HKT stating the interview was received; additional Bank of America Video Interview Complete confirmations were received on 2026-08-14 and 2026-08-19",
       urgency: "done",
-      completionReconfirmed: "2026-08-14"
+      completionReconfirmed: "2026-08-19"
     },
     {
       id: "bofa-4757966-vi",
@@ -404,6 +415,17 @@ window.BB_SYNC_DATA = {
       note: "邀请于 2026-08-14 15:50 HKT 收到 · 预计 10 分钟 · 邮件只写 COMPLETE BY: 16 August 2026，未给具体时间；日历暂按香港当日 23:59 展示 · 2026-08-16 03:20 HKT 收到完成确认",
       hardDeadline: true,
       done: true
+    },
+    {
+      id: "cal-ms-ied-2027-hk-sg-vi",
+      date: "2026-08-23",
+      time: "23:59",
+      title: "完成 Morgan Stanley Institutional Equity Division VI",
+      shortTitle: "MS IED VI",
+      category: "VI",
+      assessmentId: "ms-ied-2027-hk-sg-vi",
+      note: "邀请于 2026-08-18 17:25 HKT 收到 · 预计 10 分钟 · 邮件只写 COMPLETE BY: 23 August 2026，未给具体时间；日历暂按香港当日 23:59 展示",
+      hardDeadline: true
     },
     {
       id: "cal-jefferies-ib-first-round-1",
@@ -525,7 +547,7 @@ window.BB_SYNC_DATA = {
       shortTitle: "BofA GIB VI",
       category: "VI",
       assessmentId: "bofa-gib-vi",
-      note: "邀请于 2026-08-05 16:55 HKT 收到；正文写明 3 days (72 hours) from the exact time of invitation，hard deadline 为 2026-08-08 16:55 HKT；完成确认于 2026-08-08 15:04 HKT 收到；2026-08-14 又收到 application 4739429 的 Video Interview Complete 确认",
+      note: "邀请于 2026-08-05 16:55 HKT 收到；正文写明 3 days (72 hours) from the exact time of invitation，hard deadline 为 2026-08-08 16:55 HKT；完成确认于 2026-08-08 15:04 HKT 收到；2026-08-14 和 2026-08-19 又收到 application 4739429 的 Video Interview Complete 确认",
       hardDeadline: true,
       done: true
     },
