@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026082001,
-  checkedAt: "2026-08-20T06:01:18+08:00",
+  version: 2026082101,
+  checkedAt: "2026-08-21T06:02:04+08:00",
   correctedAt: "2026-08-19T06:01:16+08:00",
-  summary: "Incremental and full Outlook reconciliation completed 2026-08-20 06:01 HKT. New high-confidence item: Morgan Stanley invited the 2027 Institutional Equity Division Industrial Placement / Summer Analyst Program (Hong Kong / Singapore) to a HireVue received 2026-08-18 17:25 HKT, with COMPLETE BY: 23 August 2026; no exact time is stated, so 23:59 HKT is used with this caveat. Bank of America sent another Video Interview Complete confirmation on 2026-08-19 for Global Investment Banking application 4739429; its completed status is unchanged. No HSBC Job Simulation completion confirmation was found; its official deadline remains 2026-08-20 07:50 HKT. Citi questionnaire remains pending without an official deadline. Marketing and event emails were excluded. All tracked companies and required assessment/status keywords were rechecked across all folders.",
+  summary: "Incremental and full Outlook reconciliation completed 2026-08-21 06:02 HKT. No new high-confidence applications, assessment invitations or completion confirmations were found. The HSBC Investment Banking Job Simulation official deadline of 2026-08-20 07:50 HKT has passed without an email completion confirmation; the assessment is now Expired and the application is VI Expired, without inferring withdrawal or rejection. Morgan Stanley IED HireVue remains pending with COMPLETE BY: 23 August 2026; no exact time is stated, so 23:59 HKT is retained with this caveat. Citi questionnaire remains pending without an official deadline. HSBC Career Pathway and other event or marketing emails were excluded. All tracked companies and required assessment/status keywords were rechecked across all folders.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -133,7 +133,7 @@ window.BB_SYNC_DATA = {
       division: "Investment Banking",
       role: "Investment Banking - Internship",
       location: "",
-      status: "VI Pending",
+      status: "VI Expired",
       applied: "2026-07-28",
       channel: "HSBC Careers",
       ref: "",
@@ -214,10 +214,10 @@ window.BB_SYNC_DATA = {
       appId: "hsbc-investment-banking-internship",
       type: "VI",
       platform: "HSBC Job Simulation · Cappfinity",
-      status: "Not Started",
+      status: "Expired",
       received: "2026-08-10T07:50:00+08:00",
       deadline: "2026-08-20T07:50:00+08:00",
-      original: "Investment Banking - Internship · Job Simulation includes video interview questions; email received 2026-08-10 07:50 HKT states 'You have 10 days to complete the assessment'; not timed and usually takes about 30 minutes",
+      original: "Expired · Investment Banking - Internship · Job Simulation includes video interview questions; email received 2026-08-10 07:50 HKT states 'You have 10 days to complete the assessment'; official deadline 2026-08-20 07:50 HKT passed without an email completion confirmation; not timed and usually takes about 30 minutes",
       urgency: "danger"
     },
     {
@@ -389,8 +389,10 @@ window.BB_SYNC_DATA = {
       shortTitle: "HSBC IBD Job Simulation",
       category: "VI",
       assessmentId: "hsbc-investment-banking-job-simulation",
-      note: "邀请于 2026-08-10 07:50 HKT 收到 · 包含 video interview questions · 邮件明确要求 10 天内完成 · 官方截止 2026-08-20 07:50 HKT · 不计时，预计约 30 分钟",
-      hardDeadline: true
+      note: "已过期 · 邀请于 2026-08-10 07:50 HKT 收到 · 包含 video interview questions · 邮件明确要求 10 天内完成 · 官方截止 2026-08-20 07:50 HKT · 未找到完成确认邮件",
+      hardDeadline: true,
+      status: "Expired",
+      closed: true
     },
     {
       id: "cal-ms-gcm-2027-hk-vi",
