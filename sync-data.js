@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026082101,
-  checkedAt: "2026-08-21T06:02:04+08:00",
+  version: 2026082201,
+  checkedAt: "2026-08-22T06:00:24+08:00",
   correctedAt: "2026-08-19T06:01:16+08:00",
-  summary: "Incremental and full Outlook reconciliation completed 2026-08-21 06:02 HKT. No new high-confidence applications, assessment invitations or completion confirmations were found. The HSBC Investment Banking Job Simulation official deadline of 2026-08-20 07:50 HKT has passed without an email completion confirmation; the assessment is now Expired and the application is VI Expired, without inferring withdrawal or rejection. Morgan Stanley IED HireVue remains pending with COMPLETE BY: 23 August 2026; no exact time is stated, so 23:59 HKT is retained with this caveat. Citi questionnaire remains pending without an official deadline. HSBC Career Pathway and other event or marketing emails were excluded. All tracked companies and required assessment/status keywords were rechecked across all folders.",
+  summary: "Incremental and full Outlook reconciliation completed 2026-08-22 06:00 HKT. Citi confirmed receipt of a new Banking - Investment Banking, Summer Analyst, Hong Kong - APAC, 2027 application (job 26984799) at 2026-08-21 07:50 HKT and issued three separate Workday tasks, including Complete Questionnaire; this programme is recorded separately from Citi Markets and no official deadline is stated. Morgan Stanley IED HireVue remains pending with COMPLETE BY: 23 August 2026; no exact time is stated, so 23:59 HKT is retained with this caveat. The earlier Citi Markets questionnaire also remains pending without an official deadline. HSBC Investment Banking Job Simulation, Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. HSBC Career Information Session, JPMorgan job recommendation and other event or marketing emails were excluded. All tracked companies and required assessment/status keywords were rechecked across all folders; no new completion confirmation or rejection was found.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -150,6 +150,19 @@ window.BB_SYNC_DATA = {
       applied: "2026-07-29",
       channel: "Citi Workday",
       ref: "26978275",
+      url: "",
+      logo: "assets/citi.svg"
+    },
+    {
+      id: "citi-ib-2027-hk",
+      company: "Citi",
+      division: "Banking · Investment Banking",
+      role: "Investment Banking, Summer Analyst, Hong Kong - APAC, 2027",
+      location: "Hong Kong",
+      status: "Questionnaire Pending",
+      applied: "2026-08-21",
+      channel: "Citi Workday",
+      ref: "26984799",
       url: "",
       logo: "assets/citi.svg"
     },
@@ -310,6 +323,17 @@ window.BB_SYNC_DATA = {
       received: "2026-07-29T05:41",
       deadline: "",
       original: "Complete Questionnaire; Campus Job App Template – APAC; Campus Job Submission - Global; no deadline stated in the emails",
+      urgency: "warning"
+    },
+    {
+      id: "citi-ib-2027-hk-questionnaire",
+      appId: "citi-ib-2027-hk",
+      type: "Questionnaire",
+      platform: "Citi Workday",
+      status: "Not Started",
+      received: "2026-08-21T07:50:00+08:00",
+      deadline: "",
+      original: "Banking - Investment Banking, Summer Analyst, Hong Kong - APAC, 2027 · job 26984799 · Workday issued Complete Questionnaire, Campus Job App Template - APAC and Campus Job Submission - Global at 2026-08-21 07:50 HKT; no official deadline stated in the emails",
       urgency: "warning"
     },
     {
@@ -499,6 +523,16 @@ window.BB_SYNC_DATA = {
       category: "Questionnaire",
       assessmentId: "citi-markets-questionnaire",
       note: "包含 Complete Questionnaire、APAC application template、Global submission；未注明官方截止"
+    },
+    {
+      id: "cal-citi-ib-2027-hk-workday-review",
+      date: "2026-08-22",
+      time: "14:00",
+      title: "完成 Citi Investment Banking 的 3 个 Workday tasks",
+      shortTitle: "Citi IBD questionnaire",
+      category: "Questionnaire",
+      assessmentId: "citi-ib-2027-hk-questionnaire",
+      note: "建议完成时间，并非官方 deadline · 2026-08-21 07:50 HKT 收到 Complete Questionnaire、APAC application template、Global submission；邮件未注明官方截止"
     },
     {
       id: "cal-barclays-account-verify",
