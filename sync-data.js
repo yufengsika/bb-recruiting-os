@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026082201,
-  checkedAt: "2026-08-22T06:00:24+08:00",
+  version: 2026082301,
+  checkedAt: "2026-08-23T06:00:58+08:00",
   correctedAt: "2026-08-19T06:01:16+08:00",
-  summary: "Incremental and full Outlook reconciliation completed 2026-08-22 06:00 HKT. Citi confirmed receipt of a new Banking - Investment Banking, Summer Analyst, Hong Kong - APAC, 2027 application (job 26984799) at 2026-08-21 07:50 HKT and issued three separate Workday tasks, including Complete Questionnaire; this programme is recorded separately from Citi Markets and no official deadline is stated. Morgan Stanley IED HireVue remains pending with COMPLETE BY: 23 August 2026; no exact time is stated, so 23:59 HKT is retained with this caveat. The earlier Citi Markets questionnaire also remains pending without an official deadline. HSBC Investment Banking Job Simulation, Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. HSBC Career Information Session, JPMorgan job recommendation and other event or marketing emails were excluded. All tracked companies and required assessment/status keywords were rechecked across all folders; no new completion confirmation or rejection was found.",
+  summary: "Incremental and full Outlook reconciliation completed 2026-08-23 06:00 HKT. No new high-confidence application, assessment invitation, completion confirmation, rejection or deadline change was found since the previous check. Morgan Stanley IED HireVue remains pending and is due today, 23 August 2026; the email gives no exact time, so 23:59 HKT remains the displayed deadline with this caveat. Citi Markets and Citi Investment Banking questionnaires remain separate pending assessments and neither email states an official deadline. HSBC Investment Banking Job Simulation, Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. Event, marketing and job-recommendation emails were excluded. All tracked companies and required assessment/status keywords were rechecked across all folders.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
