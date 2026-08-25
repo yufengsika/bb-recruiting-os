@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026082301,
-  checkedAt: "2026-08-23T06:00:58+08:00",
-  correctedAt: "2026-08-19T06:01:16+08:00",
-  summary: "Incremental and full Outlook reconciliation completed 2026-08-23 06:00 HKT. No new high-confidence application, assessment invitation, completion confirmation, rejection or deadline change was found since the previous check. Morgan Stanley IED HireVue remains pending and is due today, 23 August 2026; the email gives no exact time, so 23:59 HKT remains the displayed deadline with this caveat. Citi Markets and Citi Investment Banking questionnaires remain separate pending assessments and neither email states an official deadline. HSBC Investment Banking Job Simulation, Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. Event, marketing and job-recommendation emails were excluded. All tracked companies and required assessment/status keywords were rechecked across all folders.",
+  version: 2026082501,
+  checkedAt: "2026-08-25T06:04:12+08:00",
+  correctedAt: "2026-08-25T06:04:12+08:00",
+  summary: "Incremental and full Outlook reconciliation completed 2026-08-25 06:04 HKT. Morgan Stanley confirmed submission of the 2027 Institutional Equity Division virtual interview at 2026-08-23 19:00 HKT, before the 23 August deadline; the application and assessment are now VI Completed / Confirmed. A previously missed BNP Paribas application confirmation and Online Test invitation from 2026-08-20 were added as a correction for the 2027 APAC Long Internship (Jan - Jun) - Global Banking APAC - Hong Kong, reference 1234567890100117491. The BNP Paribas invitation and later Aon mapTQ sign-in emails state no official deadline, so only a suggested completion task is recorded. Citi Markets and Citi Investment Banking questionnaires remain separate pending assessments without official deadlines. HSBC Investment Banking Job Simulation, Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. Today's Jefferies interviews remain scheduled for 10:30-11:00 and 11:00-11:30 HKT with no cancellation or reschedule found. All tracked companies and required assessment/status keywords were rechecked across all folders; event, marketing and job-recommendation emails were excluded.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -107,7 +107,7 @@ window.BB_SYNC_DATA = {
       division: "Institutional Equity Division",
       role: "2027 Institutional Equity Division Industrial Placement / Summer Analyst Program",
       location: "Hong Kong / Singapore",
-      status: "VI Pending",
+      status: "VI Completed",
       applied: "2026-07-31",
       channel: "Morgan Stanley Careers",
       ref: "",
@@ -165,6 +165,19 @@ window.BB_SYNC_DATA = {
       ref: "26984799",
       url: "",
       logo: "assets/citi.svg"
+    },
+    {
+      id: "bnp-global-banking-long-internship-2027-hk",
+      company: "BNP Paribas",
+      division: "Global Banking APAC",
+      role: "2027 APAC Long Internship (Jan - Jun)",
+      location: "Hong Kong",
+      status: "OT Pending",
+      applied: "2026-08-20",
+      channel: "BNP Paribas Careers",
+      ref: "1234567890100117491",
+      url: "",
+      logo: ""
     },
     {
       id: "barclays-investment-banking-summer-internship",
@@ -264,11 +277,13 @@ window.BB_SYNC_DATA = {
       appId: "ms-ied-2027-hk-sg",
       type: "VI",
       platform: "Morgan Stanley HireVue",
-      status: "Not Started",
+      status: "Confirmed",
       received: "2026-08-18T17:25:00+08:00",
       deadline: "2026-08-23T23:59:00+08:00",
-      original: "2027 Institutional Equity Division Industrial Placement / Summer Analyst Program (Hong Kong / Singapore) · estimated duration 10 minutes · email states COMPLETE BY: 23 August 2026; no exact time stated, so end of Hong Kong calendar day is used with this caveat",
-      urgency: "warning"
+      original: "2027 Institutional Equity Division Industrial Placement / Summer Analyst Program (Hong Kong / Singapore) · estimated duration 10 minutes · email states COMPLETE BY: 23 August 2026; no exact time stated, so end of Hong Kong calendar day is used with this caveat · completion confirmation received 2026-08-23 19:00 HKT stating 'Thank you for submitting your virtual interview'",
+      urgency: "done",
+      completionSource: "email",
+      completionReceived: "2026-08-23T19:00:00+08:00"
     },
     {
       id: "ubs-gb-vi",
@@ -334,6 +349,17 @@ window.BB_SYNC_DATA = {
       received: "2026-08-21T07:50:00+08:00",
       deadline: "",
       original: "Banking - Investment Banking, Summer Analyst, Hong Kong - APAC, 2027 · job 26984799 · Workday issued Complete Questionnaire, Campus Job App Template - APAC and Campus Job Submission - Global at 2026-08-21 07:50 HKT; no official deadline stated in the emails",
+      urgency: "warning"
+    },
+    {
+      id: "bnp-global-banking-long-internship-2027-hk-ot",
+      appId: "bnp-global-banking-long-internship-2027-hk",
+      type: "OT",
+      platform: "Aon mapTQ",
+      status: "Not Started",
+      received: "2026-08-20T10:33:00+08:00",
+      deadline: "",
+      original: "2027 APAC Long Internship (Jan - Jun) - Global Banking APAC - Hong Kong · reference 1234567890100117491 · BNP Paribas invitation received 2026-08-20 10:33 HKT states the next stage requires a test and provides an Aon mapTQ link; no official deadline stated in the invitation or subsequent mapTQ sign-in emails",
       urgency: "warning"
     },
     {
@@ -450,8 +476,9 @@ window.BB_SYNC_DATA = {
       shortTitle: "MS IED VI",
       category: "VI",
       assessmentId: "ms-ied-2027-hk-sg-vi",
-      note: "邀请于 2026-08-18 17:25 HKT 收到 · 预计 10 分钟 · 邮件只写 COMPLETE BY: 23 August 2026，未给具体时间；日历暂按香港当日 23:59 展示",
-      hardDeadline: true
+      note: "邀请于 2026-08-18 17:25 HKT 收到 · 预计 10 分钟 · 邮件只写 COMPLETE BY: 23 August 2026，未给具体时间；日历暂按香港当日 23:59 展示 · 2026-08-23 19:00 HKT 收到完成确认",
+      hardDeadline: true,
+      done: true
     },
     {
       id: "cal-jefferies-ib-first-round-1",
@@ -533,6 +560,16 @@ window.BB_SYNC_DATA = {
       category: "Questionnaire",
       assessmentId: "citi-ib-2027-hk-questionnaire",
       note: "建议完成时间，并非官方 deadline · 2026-08-21 07:50 HKT 收到 Complete Questionnaire、APAC application template、Global submission；邮件未注明官方截止"
+    },
+    {
+      id: "cal-bnp-global-banking-long-internship-2027-hk-ot",
+      date: "2026-08-25",
+      time: "14:00",
+      title: "完成 BNP Paribas Global Banking Online Test",
+      shortTitle: "BNP Global Banking OT",
+      category: "OT",
+      assessmentId: "bnp-global-banking-long-internship-2027-hk-ot",
+      note: "建议完成时间，并非官方 deadline · 2026-08-20 10:33 HKT 收到 Aon mapTQ Online Test 邀请；邀请和后续登录邮件均未注明官方截止"
     },
     {
       id: "cal-barclays-account-verify",
