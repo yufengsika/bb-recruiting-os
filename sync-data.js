@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026082801,
-  checkedAt: "2026-08-28T06:00:28+08:00",
+  version: 2026083001,
+  checkedAt: "2026-08-30T06:14:40+08:00",
   correctedAt: "2026-08-25T06:04:12+08:00",
-  summary: "Incremental and full Outlook reconciliation completed 2026-08-28 06:00 HKT. A new BlackRock application and mandatory pre-interview assessment were confirmed for the 2027 Summer Internship Program - Investments - Portfolio Management - Hong Kong. The invitation was received 2026-08-26 18:00 HKT and states that the assessment must be submitted within five days of the email, giving an official deadline of 2026-08-31 18:00 HKT. The email does not identify the non-technical assessment format as a video interview, so it is recorded conservatively as an OA / pre-interview assessment rather than a VI. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending without official deadlines. HSBC Investment Banking Job Simulation, Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No Jefferies post-interview status email, new rejection or other deadline change was found. All tracked companies, including BlackRock, and all required assessment/status keywords were rechecked across all folders for the prior 14 days; event, marketing and job-recommendation emails were excluded.",
+  summary: "Incremental and full Outlook reconciliation completed 2026-08-30 06:14 HKT. BlackRock confirmed at 2026-08-29 10:35 HKT that the 2027 Summer Internship Program - Investments - Portfolio Management - Hong Kong application was complete, including the mandatory pre-interview assessment. The preceding Modern Hire email at 10:16 HKT called this same assessment a video interview and stated no official deadline; it is not recorded as a second assessment. The existing BlackRock pre-interview assessment and calendar task are therefore marked complete, and the application is now OT Completed / under review. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending without official deadlines. HSBC Investment Banking Job Simulation, Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No Jefferies post-interview status email, new rejection or other deadline change was found. All tracked companies and required assessment/status keywords were rechecked across all folders for the prior 14 days; event, marketing and job-recommendation emails were excluded.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -185,7 +185,7 @@ window.BB_SYNC_DATA = {
       division: "Investments · Portfolio Management",
       role: "2027 Summer Internship Program",
       location: "Hong Kong",
-      status: "OT Pending",
+      status: "OT Completed",
       applied: "2026-08-26",
       channel: "BlackRock Candidate Portal",
       ref: "",
@@ -380,11 +380,13 @@ window.BB_SYNC_DATA = {
       appId: "blackrock-investments-portfolio-management-2027-hk",
       type: "OA",
       platform: "BlackRock Pre-interview Assessment",
-      status: "Not Started",
+      status: "Confirmed",
       received: "2026-08-26T18:00:00+08:00",
       deadline: "2026-08-31T18:00:00+08:00",
-      original: "2027 Summer Internship Program - Investments - Portfolio Management - Hong Kong · email received 2026-08-26 18:00 HKT states: 'you must submit the pre-interview assessment within five days of this email'; official deadline calculated as 2026-08-31 18:00 HKT · email does not state that this non-technical assessment is a video interview, so the format is not inferred",
-      urgency: "danger"
+      original: "2027 Summer Internship Program - Investments - Portfolio Management - Hong Kong · invitation received 2026-08-26 18:00 HKT states: 'you must submit the pre-interview assessment within five days of this email'; official deadline calculated as 2026-08-31 18:00 HKT · Modern Hire invitation received 2026-08-29 10:16 HKT calls the same assessment a video interview and states no separate deadline · BlackRock completion email received 2026-08-29 10:35 HKT confirms receipt of the completed application, including the pre-interview assessment",
+      urgency: "done",
+      completionSource: "email",
+      completionReceived: "2026-08-29T10:35:00+08:00"
     },
     {
       id: "barclays-investment-banking-ot",
@@ -603,8 +605,9 @@ window.BB_SYNC_DATA = {
       shortTitle: "BlackRock PM OA",
       category: "OA",
       assessmentId: "blackrock-investments-portfolio-management-2027-hk-oa",
-      note: "官方 deadline · 邀请于 2026-08-26 18:00 HKT 收到 · 正文明确要求在邮件发出后 5 天内完成 · 截止为 2026-08-31 18:00 HKT · 邮件未明确非技术岗位题型是否为 VI",
-      hardDeadline: true
+      note: "已完成 · 邀请于 2026-08-26 18:00 HKT 收到 · 正文明确要求在邮件发出后 5 天内完成 · 原官方截止为 2026-08-31 18:00 HKT · 2026-08-29 10:35 HKT 收到 BlackRock 完成确认，明确包含 pre-interview assessment",
+      hardDeadline: true,
+      done: true
     },
     {
       id: "cal-barclays-account-verify",
