@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026083001,
-  checkedAt: "2026-08-30T06:14:40+08:00",
+  version: 2026083101,
+  checkedAt: "2026-08-31T07:00:54+08:00",
   correctedAt: "2026-08-25T06:04:12+08:00",
-  summary: "Incremental and full Outlook reconciliation completed 2026-08-30 06:14 HKT. BlackRock confirmed at 2026-08-29 10:35 HKT that the 2027 Summer Internship Program - Investments - Portfolio Management - Hong Kong application was complete, including the mandatory pre-interview assessment. The preceding Modern Hire email at 10:16 HKT called this same assessment a video interview and stated no official deadline; it is not recorded as a second assessment. The existing BlackRock pre-interview assessment and calendar task are therefore marked complete, and the application is now OT Completed / under review. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending without official deadlines. HSBC Investment Banking Job Simulation, Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No Jefferies post-interview status email, new rejection or other deadline change was found. All tracked companies and required assessment/status keywords were rechecked across all folders for the prior 14 days; event, marketing and job-recommendation emails were excluded.",
+  summary: "Incremental and full Outlook reconciliation completed 2026-08-31 07:00 HKT. No new recruiting application, assessment invitation, completion confirmation, rejection or deadline change was found since the prior check. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending without official deadlines. BlackRock pre-interview assessment remains confirmed complete; Morgan Stanley and Bank of America completion records remain unchanged. HSBC Investment Banking Job Simulation, Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No Jefferies post-interview status email was found. Every tracked company and all required assessment/status keywords were rechecked across all Outlook folders for the prior 14 days; event, marketing and job-recommendation emails were excluded.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
