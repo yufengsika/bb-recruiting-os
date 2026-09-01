@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026083101,
-  checkedAt: "2026-08-31T07:00:54+08:00",
-  correctedAt: "2026-08-25T06:04:12+08:00",
-  summary: "Incremental and full Outlook reconciliation completed 2026-08-31 07:00 HKT. No new recruiting application, assessment invitation, completion confirmation, rejection or deadline change was found since the prior check. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending without official deadlines. BlackRock pre-interview assessment remains confirmed complete; Morgan Stanley and Bank of America completion records remain unchanged. HSBC Investment Banking Job Simulation, Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No Jefferies post-interview status email was found. Every tracked company and all required assessment/status keywords were rechecked across all Outlook folders for the prior 14 days; event, marketing and job-recommendation emails were excluded.",
+  version: 2026090101,
+  checkedAt: "2026-09-01T06:03:23+08:00",
+  correctedAt: "",
+  summary: "Incremental and full Outlook reconciliation completed 2026-09-01 06:03 HKT. New confirmed applications: Standard Chartered Global Banking Intern Hong Kong 2027 and IMC Quantitative Trader Intern 2027. Standard Chartered issued a Skills Insight Assessment at 2026-08-31 21:30 HKT with an official 14-day deadline of 2026-09-14 21:30 HKT. Morgan Stanley requested additional information for the 2027 Investment Banking Industrial Placement / Summer Analyst Program (Hong Kong) within 24 hours of its 2026-08-31 13:14 HKT email, giving a hard deadline of 2026-09-01 13:14 HKT. HSBC confirmed at 2026-08-31 15:38 HKT that all assessments for Investment Banking - Internship were completed, correcting the Job Simulation from Expired to Confirmed. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending without official deadlines. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No new rejection or Jefferies post-interview status email was found. Every tracked company and all required assessment/status keywords were rechecked across all Outlook folders for the prior 14 days; event, marketing, candidate-resource and job-recommendation emails were excluded.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -133,7 +133,7 @@ window.BB_SYNC_DATA = {
       division: "Investment Banking",
       role: "Investment Banking - Internship",
       location: "",
-      status: "VI Expired",
+      status: "VI Completed",
       applied: "2026-07-28",
       channel: "HSBC Careers",
       ref: "",
@@ -188,6 +188,32 @@ window.BB_SYNC_DATA = {
       status: "OT Completed",
       applied: "2026-08-26",
       channel: "BlackRock Candidate Portal",
+      ref: "",
+      url: "",
+      logo: ""
+    },
+    {
+      id: "standard-chartered-global-banking-intern-2027-hk",
+      company: "Standard Chartered",
+      division: "Global Banking",
+      role: "Global Banking Intern Hong Kong 2027",
+      location: "Hong Kong",
+      status: "OT Pending",
+      applied: "2026-08-31",
+      channel: "Standard Chartered Careers",
+      ref: "",
+      url: "",
+      logo: ""
+    },
+    {
+      id: "imc-quantitative-trader-intern-2027-hk",
+      company: "IMC",
+      division: "Trading",
+      role: "Quantitative Trader Intern 2027",
+      location: "Hong Kong",
+      status: "Applied",
+      applied: "2026-08-31",
+      channel: "IMC Careers",
       ref: "",
       url: "",
       logo: ""
@@ -253,11 +279,13 @@ window.BB_SYNC_DATA = {
       appId: "hsbc-investment-banking-internship",
       type: "VI",
       platform: "HSBC Job Simulation · Cappfinity",
-      status: "Expired",
+      status: "Confirmed",
       received: "2026-08-10T07:50:00+08:00",
       deadline: "2026-08-20T07:50:00+08:00",
-      original: "Expired · Investment Banking - Internship · Job Simulation includes video interview questions; email received 2026-08-10 07:50 HKT states 'You have 10 days to complete the assessment'; official deadline 2026-08-20 07:50 HKT passed without an email completion confirmation; not timed and usually takes about 30 minutes",
-      urgency: "danger"
+      original: "Investment Banking - Internship · Job Simulation includes video interview questions; email received 2026-08-10 07:50 HKT states 'You have 10 days to complete the assessment'; original official deadline was 2026-08-20 07:50 HKT; HSBC status email received 2026-08-31 15:38 HKT states 'Thank you for completing your assessments', confirming all assessments for the role were completed; not timed and usually takes about 30 minutes",
+      urgency: "done",
+      completionSource: "email",
+      completionReceived: "2026-08-31T15:38:00+08:00"
     },
     {
       id: "ms-gcm-2027-hk-vi",
@@ -389,6 +417,17 @@ window.BB_SYNC_DATA = {
       completionReceived: "2026-08-29T10:35:00+08:00"
     },
     {
+      id: "standard-chartered-global-banking-2027-hk-skills-insight",
+      appId: "standard-chartered-global-banking-intern-2027-hk",
+      type: "OT",
+      platform: "SHL Skills Insight Assessment",
+      status: "Not Started",
+      received: "2026-08-31T21:30:00+08:00",
+      deadline: "2026-09-14T21:30:00+08:00",
+      original: "Global Banking Intern Hong Kong 2027 · Standard Chartered invitation received 2026-08-31 21:30 HKT states 'complete the assessment within 14 days of this email'; official deadline calculated as 2026-09-14 21:30 HKT · assessment has behavioural skills and reasoning skills elements; allow 60 minutes in total, including a timed 36-minute reasoning element",
+      urgency: "danger"
+    },
+    {
       id: "barclays-investment-banking-ot",
       appId: "barclays-investment-banking-summer-internship",
       type: "OT",
@@ -465,10 +504,9 @@ window.BB_SYNC_DATA = {
       shortTitle: "HSBC IBD Job Simulation",
       category: "VI",
       assessmentId: "hsbc-investment-banking-job-simulation",
-      note: "已过期 · 邀请于 2026-08-10 07:50 HKT 收到 · 包含 video interview questions · 邮件明确要求 10 天内完成 · 官方截止 2026-08-20 07:50 HKT · 未找到完成确认邮件",
+      note: "已完成 · 邀请于 2026-08-10 07:50 HKT 收到 · 包含 video interview questions · 原官方截止 2026-08-20 07:50 HKT · 2026-08-31 15:38 HKT 收到 HSBC 状态邮件，明确确认该岗位全部 assessments 已完成",
       hardDeadline: true,
-      status: "Expired",
-      closed: true
+      done: true
     },
     {
       id: "cal-ms-gcm-2027-hk-vi",
@@ -686,6 +724,28 @@ window.BB_SYNC_DATA = {
       hardDeadline: true,
       status: "Expired",
       closed: true
+    },
+    {
+      id: "cal-ms-ib-2027-hk-additional-information",
+      date: "2026-09-01",
+      time: "13:14",
+      title: "提交 Morgan Stanley IBD additional information survey",
+      shortTitle: "MS IBD 补资料",
+      category: "Application",
+      appId: "ms-ib",
+      note: "硬截止 · 2026-08-31 13:14 HKT 邮件要求 24 小时内提交 admission date、expected graduation date、Summer Analyst / Industrial Placement preference 及 transcript",
+      hardDeadline: true
+    },
+    {
+      id: "cal-standard-chartered-global-banking-2027-hk-skills-insight",
+      date: "2026-09-14",
+      time: "21:30",
+      title: "完成 Standard Chartered Global Banking Skills Insight Assessment",
+      shortTitle: "SC Global Banking OT",
+      category: "OT",
+      assessmentId: "standard-chartered-global-banking-2027-hk-skills-insight",
+      note: "硬截止 · 邀请于 2026-08-31 21:30 HKT 收到 · 正文明确要求 14 天内完成 · 官方截止 2026-09-14 21:30 HKT · 预计预留 60 分钟，其中 reasoning skills 计时 36 分钟",
+      hardDeadline: true
     }
   ]
 };
