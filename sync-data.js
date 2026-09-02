@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026090201,
-  checkedAt: "2026-09-02T06:01:52+08:00",
+  version: 2026090301,
+  checkedAt: "2026-09-03T06:01:21+08:00",
   correctedAt: "",
-  summary: "Incremental and full Outlook reconciliation completed 2026-09-02 06:01 HKT. No new recruiting application, assessment invitation, completion confirmation, rejection or deadline change was found since the prior check. Standard Chartered Global Banking Skills Insight Assessment remains pending with official deadline 2026-09-14 21:30 HKT. Morgan Stanley IBD additional-information survey hard deadline was 2026-09-01 13:14 HKT; no submission or completion confirmation email was found in the incremental or 14-day audit, so the task remains open for follow-up without inferring rejection. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending without official deadlines. HSBC Investment Banking assessments remain confirmed complete. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No new Jefferies post-interview status email was found. Every tracked company and all required assessment/status keywords were rechecked across all Outlook folders for the prior 14 days; event, marketing, candidate-resource and job-recommendation emails were excluded.",
+  summary: "Incremental and full Outlook reconciliation completed 2026-09-03 06:01 HKT. Morgan Stanley IBD sent a 2026-09-02 19:10 HKT Zoom interview scheduling reminder confirming progression to the next interview stage; the email says the interview will be held in the coming week and the IBD team will contact the candidate to confirm details, but gives no exact interview time or official deadline. The application is now Interview Pending and a non-hard follow-up task was added to monitor and respond to scheduling contact. Standard Chartered Global Banking Skills Insight Assessment remains pending with official deadline 2026-09-14 21:30 HKT. Morgan Stanley IBD additional-information survey hard deadline was 2026-09-01 13:14 HKT; no submission or completion confirmation email was found, so the task remains open for follow-up without inferring rejection. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending without official deadlines. HSBC Investment Banking assessments remain confirmed complete. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No new application, assessment completion, rejection or Jefferies post-interview status email was found. Every tracked company and all required assessment/status keywords were rechecked across all Outlook folders for the prior 14 days; event, marketing, candidate-resource and job-recommendation emails were excluded.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -94,7 +94,7 @@ window.BB_SYNC_DATA = {
       division: "Investment Banking",
       role: "2027 Investment Banking Industrial Placement / Summer Analyst Program",
       location: "Hong Kong / Singapore / Seoul",
-      status: "VI Completed",
+      status: "Interview Pending",
       applied: "2026-08-01",
       channel: "Morgan Stanley Careers",
       ref: "",
@@ -746,6 +746,20 @@ window.BB_SYNC_DATA = {
       assessmentId: "standard-chartered-global-banking-2027-hk-skills-insight",
       note: "硬截止 · 邀请于 2026-08-31 21:30 HKT 收到 · 正文明确要求 14 天内完成 · 官方截止 2026-09-14 21:30 HKT · 预计预留 60 分钟，其中 reasoning skills 计时 36 分钟",
       hardDeadline: true
+    },
+    {
+      id: "cal-ms-ib-zoom-scheduling-follow-up",
+      date: "2026-09-03",
+      time: "全天",
+      title: "跟进 Morgan Stanley IBD Zoom interview 安排",
+      shortTitle: "MS IBD Zoom 跟进",
+      category: "Interview",
+      appId: "ms-ib",
+      note: "建议事项 · 2026-09-02 19:10 HKT 邮件确认进入下一轮 Zoom interview；面试将在 coming week 进行，IBD team 将联系确认具体安排；没有官方面试时间或 deadline，请留意并及时回应邮件/电话",
+      hardDeadline: false,
+      suggested: true,
+      sourceType: "application",
+      sourceId: "ms-ib"
     },
     {
       id: "cal-personal-lunch-20260904",
