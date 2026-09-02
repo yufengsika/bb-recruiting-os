@@ -746,6 +746,39 @@ window.BB_SYNC_DATA = {
       assessmentId: "standard-chartered-global-banking-2027-hk-skills-insight",
       note: "硬截止 · 邀请于 2026-08-31 21:30 HKT 收到 · 正文明确要求 14 天内完成 · 官方截止 2026-09-14 21:30 HKT · 预计预留 60 分钟，其中 reasoning skills 计时 36 分钟",
       hardDeadline: true
+    },
+    {
+      id: "cal-personal-lunch-20260904",
+      date: "2026-09-04",
+      time: "12:00",
+      title: "中午吃饭",
+      shortTitle: "吃饭",
+      category: "Task",
+      note: "个人安排",
+      sourceType: "manual",
+      sourceId: "cal-personal-lunch-20260904"
+    },
+    {
+      id: "cal-personal-uk-class-20260905",
+      date: "2026-09-05",
+      time: "22:00",
+      title: "UK 上课",
+      shortTitle: "UK 上课",
+      category: "Task",
+      note: "英国时间 15:00 · 香港时间 22:00",
+      sourceType: "manual",
+      sourceId: "cal-personal-uk-class-20260905"
+    },
+    {
+      id: "cal-personal-party-20260906",
+      date: "2026-09-06",
+      time: "全天",
+      title: "Party",
+      shortTitle: "Party",
+      category: "Task",
+      note: "下午开始 · 全天安排",
+      sourceType: "manual",
+      sourceId: "cal-personal-party-20260906"
     }
   ]
 };
