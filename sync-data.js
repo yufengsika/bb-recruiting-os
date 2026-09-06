@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026090301,
-  checkedAt: "2026-09-03T06:01:21+08:00",
+  version: 2026090701,
+  checkedAt: "2026-09-07T06:03:45+08:00",
   correctedAt: "",
-  summary: "Incremental and full Outlook reconciliation completed 2026-09-03 06:01 HKT. Morgan Stanley IBD sent a 2026-09-02 19:10 HKT Zoom interview scheduling reminder confirming progression to the next interview stage; the email says the interview will be held in the coming week and the IBD team will contact the candidate to confirm details, but gives no exact interview time or official deadline. The application is now Interview Pending and a non-hard follow-up task was added to monitor and respond to scheduling contact. Standard Chartered Global Banking Skills Insight Assessment remains pending with official deadline 2026-09-14 21:30 HKT. Morgan Stanley IBD additional-information survey hard deadline was 2026-09-01 13:14 HKT; no submission or completion confirmation email was found, so the task remains open for follow-up without inferring rejection. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending without official deadlines. HSBC Investment Banking assessments remain confirmed complete. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No new application, assessment completion, rejection or Jefferies post-interview status email was found. Every tracked company and all required assessment/status keywords were rechecked across all Outlook folders for the prior 14 days; event, marketing, candidate-resource and job-recommendation emails were excluded.",
+  summary: "Incremental and full Outlook reconciliation completed 2026-09-07 06:03 HKT. All tracked companies and required assessment/status keywords were searched in Outlook across all folders, including a 14-day backfill; event, marketing, candidate-resource and job-recommendation emails were excluded. Morgan Stanley IBD's 2026-09-04 10:49 HKT Zoom Interview Confirmation was opened and verified: the interview is scheduled for 8 September 2026 at 09:00 HKT with Jason Tse, VP, IBD, and the email asks the candidate to reply with availability and contact number. The related sent reply at 2026-09-05 18:17 HKT confirms availability and provides the contact number, so the scheduling follow-up is complete. The MS IBD application remains Interview Pending and a formal interview event is added for 2026-09-08 09:00 HKT. Standard Chartered Global Banking Skills Insight Assessment remains pending with official deadline 2026-09-14 21:30 HKT; the 2026-09-05 SHL reminder was opened and only refers back to the original invitation, with no new or changed deadline. Morgan Stanley IBD additional-information survey hard deadline was 2026-09-01 13:14 HKT; no submission or completion confirmation email was found, so the task remains open for follow-up without inferring rejection. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending without official deadlines. HSBC Investment Banking assessments remain confirmed complete. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No new application, assessment completion or rejection was found.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -749,15 +749,29 @@ window.BB_SYNC_DATA = {
     },
     {
       id: "cal-ms-ib-zoom-scheduling-follow-up",
-      date: "2026-09-03",
-      time: "全天",
-      title: "跟进 Morgan Stanley IBD Zoom interview 安排",
-      shortTitle: "MS IBD Zoom 跟进",
+      date: "2026-09-05",
+      time: "18:17",
+      title: "确认 Morgan Stanley IBD Zoom interview 安排",
+      shortTitle: "MS IBD Zoom 已确认",
       category: "Interview",
       appId: "ms-ib",
-      note: "建议事项 · 2026-09-02 19:10 HKT 邮件确认进入下一轮 Zoom interview；面试将在 coming week 进行，IBD team 将联系确认具体安排；没有官方面试时间或 deadline，请留意并及时回应邮件/电话",
+      note: "已完成 · Morgan Stanley 确认邮件于 2026-09-04 10:49 HKT 收到，安排 2026-09-08 09:00 HKT 与 Jason Tse, VP, IBD 进行 Zoom interview；邮件要求回复可用时间及联系电话 · 已发送回复于 2026-09-05 18:17 HKT 确认可参加并提供联系电话",
       hardDeadline: false,
       suggested: true,
+      sourceType: "application",
+      sourceId: "ms-ib",
+      done: true
+    },
+    {
+      id: "cal-ms-ib-zoom-interview-20260908",
+      date: "2026-09-08",
+      time: "09:00",
+      title: "Morgan Stanley IBD Zoom interview · Jason Tse",
+      shortTitle: "MS IBD Zoom interview",
+      category: "Interview",
+      appId: "ms-ib",
+      note: "正式安排 · 2026-09-08 09:00 HKT · Interviewer: Jason Tse, VP, IBD · Zoom · 确认邮件于 2026-09-04 10:49 HKT 收到，候选人已于 2026-09-05 18:17 HKT 回复确认并提供联系电话",
+      hardDeadline: true,
       sourceType: "application",
       sourceId: "ms-ib"
     },
