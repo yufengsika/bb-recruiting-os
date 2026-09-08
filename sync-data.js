@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026090701,
-  checkedAt: "2026-09-07T06:03:45+08:00",
+  version: 2026090901,
+  checkedAt: "2026-09-09T06:01:37+08:00",
   correctedAt: "",
-  summary: "Incremental and full Outlook reconciliation completed 2026-09-07 06:03 HKT. All tracked companies and required assessment/status keywords were searched in Outlook across all folders, including a 14-day backfill; event, marketing, candidate-resource and job-recommendation emails were excluded. Morgan Stanley IBD's 2026-09-04 10:49 HKT Zoom Interview Confirmation was opened and verified: the interview is scheduled for 8 September 2026 at 09:00 HKT with Jason Tse, VP, IBD, and the email asks the candidate to reply with availability and contact number. The related sent reply at 2026-09-05 18:17 HKT confirms availability and provides the contact number, so the scheduling follow-up is complete. The MS IBD application remains Interview Pending and a formal interview event is added for 2026-09-08 09:00 HKT. Standard Chartered Global Banking Skills Insight Assessment remains pending with official deadline 2026-09-14 21:30 HKT; the 2026-09-05 SHL reminder was opened and only refers back to the original invitation, with no new or changed deadline. Morgan Stanley IBD additional-information survey hard deadline was 2026-09-01 13:14 HKT; no submission or completion confirmation email was found, so the task remains open for follow-up without inferring rejection. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending without official deadlines. HSBC Investment Banking assessments remain confirmed complete. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No new application, assessment completion or rejection was found.",
+  summary: "Incremental and full Outlook reconciliation completed 2026-09-09 06:01 HKT. All tracked companies and required assessment/status keywords were searched across all Outlook folders with a 14-day backfill; marketing, job-alert and university-event emails were excluded. Morgan Stanley advised at 2026-09-07 16:12 HKT that the IBD Zoom interview could not proceed at its original 2026-09-08 09:00 slot because of a meeting conflict and proposed 2026-09-10 15:00 HKT; the candidate replied at 2026-09-07 19:44 HKT confirming the new time. The application remains Interview Pending; the reschedule email did not restate the interviewer, so Jason Tse is retained only as the interviewer named in the original confirmation. HSBC sent a direct completion confirmation at 2026-09-08 14:24 HKT for the Investment Banking Job Simulation, reconfirming its completed status. Standard Chartered sent a final SHL reminder at 2026-09-07 22:32 HKT stating that failure to complete within the next seven days would result in withdrawal; reminders do not reset deadlines, so the earlier evidenced official deadline of 2026-09-14 21:30 HKT remains authoritative. The related 2026-09-08 sent/forwarded message is not completion evidence. Standard Chartered Skills Insight, BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No new application or rejection was found.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -282,10 +282,11 @@ window.BB_SYNC_DATA = {
       status: "Confirmed",
       received: "2026-08-10T07:50:00+08:00",
       deadline: "2026-08-20T07:50:00+08:00",
-      original: "Investment Banking - Internship · Job Simulation includes video interview questions; email received 2026-08-10 07:50 HKT states 'You have 10 days to complete the assessment'; original official deadline was 2026-08-20 07:50 HKT; HSBC status email received 2026-08-31 15:38 HKT states 'Thank you for completing your assessments', confirming all assessments for the role were completed; not timed and usually takes about 30 minutes",
+      original: "Investment Banking - Internship · Job Simulation includes video interview questions; email received 2026-08-10 07:50 HKT states 'You have 10 days to complete the assessment'; original official deadline was 2026-08-20 07:50 HKT; HSBC status email received 2026-08-31 15:38 HKT states 'Thank you for completing your assessments', confirming all assessments for the role were completed; direct HSBC email received 2026-09-08 14:24 HKT states 'Thanks for completing the Job Simulation Assessment for Investment Banking - Internship', reconfirming completion; not timed and usually takes about 30 minutes",
       urgency: "done",
       completionSource: "email",
-      completionReceived: "2026-08-31T15:38:00+08:00"
+      completionReceived: "2026-08-31T15:38:00+08:00",
+      completionReconfirmed: "2026-09-08T14:24:00+08:00"
     },
     {
       id: "ms-gcm-2027-hk-vi",
@@ -424,7 +425,7 @@ window.BB_SYNC_DATA = {
       status: "Not Started",
       received: "2026-08-31T21:30:00+08:00",
       deadline: "2026-09-14T21:30:00+08:00",
-      original: "Global Banking Intern Hong Kong 2027 · Standard Chartered invitation received 2026-08-31 21:30 HKT states 'complete the assessment within 14 days of this email'; official deadline calculated as 2026-09-14 21:30 HKT · assessment has behavioural skills and reasoning skills elements; allow 60 minutes in total, including a timed 36-minute reasoning element",
+      original: "Global Banking Intern Hong Kong 2027 · Standard Chartered invitation received 2026-08-31 21:30 HKT states 'complete the assessment within 14 days of this email'; official deadline calculated as 2026-09-14 21:30 HKT · assessment has behavioural skills and reasoning skills elements; allow 60 minutes in total, including a timed 36-minute reasoning element · final SHL reminder received 2026-09-07 22:32 HKT says failure to complete within the next seven days will result in withdrawal; this reminder does not reset the earlier original deadline",
       urgency: "danger"
     },
     {
@@ -504,7 +505,7 @@ window.BB_SYNC_DATA = {
       shortTitle: "HSBC IBD Job Simulation",
       category: "VI",
       assessmentId: "hsbc-investment-banking-job-simulation",
-      note: "已完成 · 邀请于 2026-08-10 07:50 HKT 收到 · 包含 video interview questions · 原官方截止 2026-08-20 07:50 HKT · 2026-08-31 15:38 HKT 收到 HSBC 状态邮件，明确确认该岗位全部 assessments 已完成",
+      note: "已完成 · 邀请于 2026-08-10 07:50 HKT 收到 · 包含 video interview questions · 原官方截止 2026-08-20 07:50 HKT · 2026-08-31 15:38 HKT 状态邮件确认该岗位全部 assessments 已完成 · 2026-09-08 14:24 HKT 收到该 Job Simulation 的直接完成确认",
       hardDeadline: true,
       done: true
     },
@@ -744,7 +745,7 @@ window.BB_SYNC_DATA = {
       shortTitle: "SC Global Banking OT",
       category: "OT",
       assessmentId: "standard-chartered-global-banking-2027-hk-skills-insight",
-      note: "硬截止 · 邀请于 2026-08-31 21:30 HKT 收到 · 正文明确要求 14 天内完成 · 官方截止 2026-09-14 21:30 HKT · 预计预留 60 分钟，其中 reasoning skills 计时 36 分钟",
+      note: "硬截止 · 邀请于 2026-08-31 21:30 HKT 收到 · 正文明确要求 14 天内完成 · 官方截止 2026-09-14 21:30 HKT · 2026-09-07 22:32 HKT final reminder 警告 7 天内未完成将撤回申请，但提醒邮件不重置原截止 · 预计预留 60 分钟，其中 reasoning skills 计时 36 分钟",
       hardDeadline: true
     },
     {
@@ -764,13 +765,13 @@ window.BB_SYNC_DATA = {
     },
     {
       id: "cal-ms-ib-zoom-interview-20260908",
-      date: "2026-09-08",
-      time: "09:00",
-      title: "Morgan Stanley IBD Zoom interview · Jason Tse",
+      date: "2026-09-10",
+      time: "15:00",
+      title: "Morgan Stanley IBD Zoom interview",
       shortTitle: "MS IBD Zoom interview",
       category: "Interview",
       appId: "ms-ib",
-      note: "正式安排 · 2026-09-08 09:00 HKT · Interviewer: Jason Tse, VP, IBD · Zoom · 确认邮件于 2026-09-04 10:49 HKT 收到，候选人已于 2026-09-05 18:17 HKT 回复确认并提供联系电话",
+      note: "改期后的正式安排 · 2026-09-10 15:00 HKT · 原定 2026-09-08 09:00 HKT，Tiffany Tsang 于 2026-09-07 16:12 HKT 因 meeting conflict 提议改期 · 候选人于 2026-09-07 19:44 HKT 回复确认可参加 · 原确认邮件的 interviewer 为 Jason Tse, VP, IBD；改期邮件未重述或更改面试官",
       hardDeadline: true,
       sourceType: "application",
       sourceId: "ms-ib"
