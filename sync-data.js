@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026091001,
-  checkedAt: "2026-09-10T06:01:58+08:00",
+  version: 2026091101,
+  checkedAt: "2026-09-11T06:04:50+08:00",
   correctedAt: "",
-  summary: "Incremental and full Outlook reconciliation completed 2026-09-10 06:01 HKT. All tracked companies and required assessment/status keywords were searched across all Outlook folders with a 14-day backfill; marketing, job-alert and university-event emails were excluded. IMC sent an application update received 2026-09-09 14:01 HKT for Quantitative Trader Intern 2027 stating that, after reviewing the application, it decided to pursue other candidates; the IMC application is therefore Rejected. Morgan Stanley's 2026-09-09 15:54 HKT reply confirms the candidate's availability, the calendar invitation, 10 September at 15:00 HKT, Jason Tse as interviewer, and the Zoom link; the IBD application remains Interview Pending. HSBC sent an additional-information request received 2026-09-09 15:27 HKT for Investment Banking - Internship, asking for right-to-work document, nationality, language proficiency, latest transcript, expected course completion date, graduation date, preferred stream and (for CUHK/HKUST) a full-page portal screenshot; it asks for a reply within 48 hours, so a hard deadline of 2026-09-11 15:27 HKT is calculated from the email receipt time. The candidate replied at 2026-09-09 19:38 HKT with the requested information and transcript attachment; no HSBC confirmation of receipt was found yet, so the application remains VI Completed and this response is recorded as submitted follow-up. Standard Chartered Skills Insight remains pending with official deadline 2026-09-14 21:30 HKT; its final reminder does not reset that deadline. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No other new application, assessment invitation/completion or rejection was found.",
+  summary: "Incremental and full Outlook reconciliation completed 2026-09-11 06:04 HKT. All tracked companies and required assessment/status keywords were searched across all Outlook folders with a 14-day backfill; marketing, job-alert and university-event emails were excluded. JPMorganChase confirmed a newly submitted application at 2026-09-10 19:19 HKT for 2026 Commercial & Investment Bank - Global Investment Banking Program - Inside the Industry Case Challenge - Hong Kong, job 210782439, and HireVue issued a required recorded video interview at 2026-09-10 21:51 HKT. The invitation says to complete it 'as soon as possible' but gives no official deadline, so 2026-09-12 10:00 HKT is recorded only as a suggested completion time. No completion confirmation for this interview was found. HSBC's 2026-09-08 14:24 HKT direct confirmation of the Investment Banking Job Simulation completion was rechecked and is already reflected in the existing completed assessment. Morgan Stanley's interview was scheduled for 2026-09-10 15:00 HKT, but no post-interview status or completion evidence was found, so its application remains Interview Pending. Standard Chartered Skills Insight remains pending with official deadline 2026-09-14 21:30 HKT; its final reminder does not reset that deadline. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No other new application, assessment invitation/completion, status update or rejection was found.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -33,6 +33,19 @@ window.BB_SYNC_DATA = {
       applied: "2026-07-03",
       channel: "Oracle Careers",
       ref: "210749752",
+      url: "",
+      logo: "assets/jpmorgan.png"
+    },
+    {
+      id: "jpm-cib-gib-inside-industry-case-challenge-2026-hk",
+      company: "JPMorgan",
+      division: "Commercial & Investment Bank · Global Investment Banking",
+      role: "2026 Global Investment Banking Program - Inside the Industry Case Challenge",
+      location: "Hong Kong",
+      status: "VI Pending",
+      applied: "2026-09-10",
+      channel: "JPMorganChase Careers",
+      ref: "210782439",
       url: "",
       logo: "assets/jpmorgan.png"
     },
@@ -370,6 +383,17 @@ window.BB_SYNC_DATA = {
       deadline: "",
       original: "Reminder received 2026-07-30 21:51 HKT for 2027 Commercial & Investment Bank - Markets Summer Analyst Program - Hong Kong, 210747060; completion confirmation received 2026-08-06 09:50 HKT stating 'Thanks for submitting your video'; submit at the soonest on a rolling basis; no official deadline stated",
       urgency: "done"
+    },
+    {
+      id: "jpm-cib-gib-inside-industry-case-challenge-2026-hk-vi",
+      appId: "jpm-cib-gib-inside-industry-case-challenge-2026-hk",
+      type: "VI",
+      platform: "J.P. Morgan HireVue",
+      status: "Not Started",
+      received: "2026-09-10T21:51:00+08:00",
+      deadline: "",
+      original: "2026 Commercial & Investment Bank - Global Investment Banking Program - Inside the Industry Case Challenge - Hong Kong · job 210782439 · application confirmation received 2026-09-10 19:19 HKT · recorded video interview invitation received 2026-09-10 21:51 HKT says to complete it 'as soon as possible' and provides no official deadline · completion must be confirmed by a later HireVue email",
+      urgency: "warning"
     },
     {
       id: "citi-markets-questionnaire",
@@ -789,6 +813,18 @@ window.BB_SYNC_DATA = {
       sourceType: "application",
       sourceId: "hsbc-investment-banking-internship",
       done: true
+    },
+    {
+      id: "cal-jpm-cib-gib-inside-industry-case-challenge-2026-hk-vi",
+      date: "2026-09-12",
+      time: "10:00",
+      title: "完成 JPMorgan Inside the Industry Case Challenge VI",
+      shortTitle: "JPM GIB Case Challenge VI",
+      category: "VI",
+      assessmentId: "jpm-cib-gib-inside-industry-case-challenge-2026-hk-vi",
+      note: "建议完成时间，不是官方截止 · HireVue 邀请于 2026-09-10 21:51 HKT 收到，原文仅要求 as soon as possible，未给出明确 deadline · 完成后需等待 HireVue confirmation email",
+      hardDeadline: false,
+      suggested: true
     },
     {
       id: "cal-personal-lunch-20260904",
