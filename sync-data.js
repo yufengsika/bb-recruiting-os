@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026090901,
-  checkedAt: "2026-09-09T06:01:37+08:00",
+  version: 2026091001,
+  checkedAt: "2026-09-10T06:01:58+08:00",
   correctedAt: "",
-  summary: "Incremental and full Outlook reconciliation completed 2026-09-09 06:01 HKT. All tracked companies and required assessment/status keywords were searched across all Outlook folders with a 14-day backfill; marketing, job-alert and university-event emails were excluded. Morgan Stanley advised at 2026-09-07 16:12 HKT that the IBD Zoom interview could not proceed at its original 2026-09-08 09:00 slot because of a meeting conflict and proposed 2026-09-10 15:00 HKT; the candidate replied at 2026-09-07 19:44 HKT confirming the new time. The application remains Interview Pending; the reschedule email did not restate the interviewer, so Jason Tse is retained only as the interviewer named in the original confirmation. HSBC sent a direct completion confirmation at 2026-09-08 14:24 HKT for the Investment Banking Job Simulation, reconfirming its completed status. Standard Chartered sent a final SHL reminder at 2026-09-07 22:32 HKT stating that failure to complete within the next seven days would result in withdrawal; reminders do not reset deadlines, so the earlier evidenced official deadline of 2026-09-14 21:30 HKT remains authoritative. The related 2026-09-08 sent/forwarded message is not completion evidence. Standard Chartered Skills Insight, BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No new application or rejection was found.",
+  summary: "Incremental and full Outlook reconciliation completed 2026-09-10 06:01 HKT. All tracked companies and required assessment/status keywords were searched across all Outlook folders with a 14-day backfill; marketing, job-alert and university-event emails were excluded. IMC sent an application update received 2026-09-09 14:01 HKT for Quantitative Trader Intern 2027 stating that, after reviewing the application, it decided to pursue other candidates; the IMC application is therefore Rejected. Morgan Stanley's 2026-09-09 15:54 HKT reply confirms the candidate's availability, the calendar invitation, 10 September at 15:00 HKT, Jason Tse as interviewer, and the Zoom link; the IBD application remains Interview Pending. HSBC sent an additional-information request received 2026-09-09 15:27 HKT for Investment Banking - Internship, asking for right-to-work document, nationality, language proficiency, latest transcript, expected course completion date, graduation date, preferred stream and (for CUHK/HKUST) a full-page portal screenshot; it asks for a reply within 48 hours, so a hard deadline of 2026-09-11 15:27 HKT is calculated from the email receipt time. The candidate replied at 2026-09-09 19:38 HKT with the requested information and transcript attachment; no HSBC confirmation of receipt was found yet, so the application remains VI Completed and this response is recorded as submitted follow-up. Standard Chartered Skills Insight remains pending with official deadline 2026-09-14 21:30 HKT; its final reminder does not reset that deadline. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No other new application, assessment invitation/completion or rejection was found.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -211,7 +211,7 @@ window.BB_SYNC_DATA = {
       division: "Trading",
       role: "Quantitative Trader Intern 2027",
       location: "Hong Kong",
-      status: "Applied",
+      status: "Rejected",
       applied: "2026-08-31",
       channel: "IMC Careers",
       ref: "",
@@ -775,6 +775,20 @@ window.BB_SYNC_DATA = {
       hardDeadline: true,
       sourceType: "application",
       sourceId: "ms-ib"
+    },
+    {
+      id: "cal-hsbc-investment-banking-additional-information-20260911",
+      date: "2026-09-11",
+      time: "15:27",
+      title: "回复 HSBC Investment Banking additional information",
+      shortTitle: "HSBC IBD 补资料",
+      category: "Application",
+      appId: "hsbc-investment-banking-internship",
+      note: "已完成 · HSBC 补资料邮件于 2026-09-09 15:27 HKT 收到，要求 48 小时内回复，按收件时间计算 hard deadline 为 2026-09-11 15:27 HKT · 候选人于 2026-09-09 19:38 HKT 回复并附上最新 transcript，提交 right-to-work、nationality、language、course completion、graduation date 和 preferred stream 信息 · 等待 HSBC 后续确认",
+      hardDeadline: true,
+      sourceType: "application",
+      sourceId: "hsbc-investment-banking-internship",
+      done: true
     },
     {
       id: "cal-personal-lunch-20260904",
