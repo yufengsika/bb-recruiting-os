@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026091101,
-  checkedAt: "2026-09-11T06:04:50+08:00",
+  version: 2026091201,
+  checkedAt: "2026-09-12T06:08:03+08:00",
   correctedAt: "",
-  summary: "Incremental and full Outlook reconciliation completed 2026-09-11 06:04 HKT. All tracked companies and required assessment/status keywords were searched across all Outlook folders with a 14-day backfill; marketing, job-alert and university-event emails were excluded. JPMorganChase confirmed a newly submitted application at 2026-09-10 19:19 HKT for 2026 Commercial & Investment Bank - Global Investment Banking Program - Inside the Industry Case Challenge - Hong Kong, job 210782439, and HireVue issued a required recorded video interview at 2026-09-10 21:51 HKT. The invitation says to complete it 'as soon as possible' but gives no official deadline, so 2026-09-12 10:00 HKT is recorded only as a suggested completion time. No completion confirmation for this interview was found. HSBC's 2026-09-08 14:24 HKT direct confirmation of the Investment Banking Job Simulation completion was rechecked and is already reflected in the existing completed assessment. Morgan Stanley's interview was scheduled for 2026-09-10 15:00 HKT, but no post-interview status or completion evidence was found, so its application remains Interview Pending. Standard Chartered Skills Insight remains pending with official deadline 2026-09-14 21:30 HKT; its final reminder does not reset that deadline. BNP Paribas Aon mapTQ OT and the two Citi questionnaires remain pending. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired. No other new application, assessment invitation/completion, status update or rejection was found.",
+  summary: "Incremental and full Outlook reconciliation completed 2026-09-12 06:08 HKT, including a backfill of messages received since 2026-09-10 06:04 HKT. All tracked companies and required assessment/status keywords were searched across all Outlook folders; marketing, job-alert and university-event emails were excluded. Deutsche Bank sent a formal rejection received 2026-09-11 18:49 HKT for the 2026 Deutsche Bank Talent for Tomorrow Off-Cycle Internship Programme - Investment Banking & Capital Markets (Green & Sustainable Finance / Fintech) - Hong Kong; the programme has completed hiring and the vacancy is closed. Standard Chartered sent an application update received 2026-09-11 17:12 HKT confirming completion of the Skills Insight Assessment for Global Banking Intern Hong Kong 2027, then a new Workplace Scenario assessment invitation received 2026-09-11 17:30 HKT. The Workplace Scenario email requires completion within 5 days, so the official deadline is 2026-09-16 17:30 HKT; it contains four timed recorded scenarios and is tracked as a VI. JPMorgan's recorded VI for job 210782439 remains pending with no official deadline (ASAP only). HSBC's Job Simulation completion confirmation remains correctly recorded. Morgan Stanley's 10 September interview still has no post-interview completion or status email. BNP Paribas Aon mapTQ OT, the two Citi questionnaires and the new Standard Chartered Workplace Scenario remain pending. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -48,6 +48,19 @@ window.BB_SYNC_DATA = {
       ref: "210782439",
       url: "",
       logo: "assets/jpmorgan.png"
+    },
+    {
+      id: "db-talent-for-tomorrow-off-cycle-ibcm-gsf-fintech-2026-hk",
+      company: "Deutsche Bank",
+      division: "Investment Banking & Capital Markets · Green & Sustainable Finance / Fintech",
+      role: "2026 Talent for Tomorrow Off-Cycle Internship Programme",
+      location: "Hong Kong",
+      status: "Rejected",
+      applied: "",
+      channel: "Deutsche Bank Careers",
+      ref: "",
+      url: "",
+      logo: ""
     },
     {
       id: "jefferies-ib",
@@ -211,7 +224,7 @@ window.BB_SYNC_DATA = {
       division: "Global Banking",
       role: "Global Banking Intern Hong Kong 2027",
       location: "Hong Kong",
-      status: "OT Pending",
+      status: "VI Pending",
       applied: "2026-08-31",
       channel: "Standard Chartered Careers",
       ref: "",
@@ -446,11 +459,24 @@ window.BB_SYNC_DATA = {
       appId: "standard-chartered-global-banking-intern-2027-hk",
       type: "OT",
       platform: "SHL Skills Insight Assessment",
-      status: "Not Started",
+      status: "Confirmed",
       received: "2026-08-31T21:30:00+08:00",
       deadline: "2026-09-14T21:30:00+08:00",
-      original: "Global Banking Intern Hong Kong 2027 · Standard Chartered invitation received 2026-08-31 21:30 HKT states 'complete the assessment within 14 days of this email'; official deadline calculated as 2026-09-14 21:30 HKT · assessment has behavioural skills and reasoning skills elements; allow 60 minutes in total, including a timed 36-minute reasoning element · final SHL reminder received 2026-09-07 22:32 HKT says failure to complete within the next seven days will result in withdrawal; this reminder does not reset the earlier original deadline",
-      urgency: "danger"
+      original: "Global Banking Intern Hong Kong 2027 · Standard Chartered invitation received 2026-08-31 21:30 HKT states 'complete the assessment within 14 days of this email'; official deadline calculated as 2026-09-14 21:30 HKT · assessment has behavioural skills and reasoning skills elements; allow 60 minutes in total, including a timed 36-minute reasoning element · final SHL reminder received 2026-09-07 22:32 HKT says failure to complete within the next seven days will result in withdrawal; this reminder does not reset the earlier original deadline · completion confirmed by Standard Chartered application update received 2026-09-11 17:12 HKT stating 'Thank you for taking the time to complete our Skills Insight Assessment'",
+      urgency: "done",
+      completionSource: "email",
+      completionReceived: "2026-09-11T17:12:00+08:00"
+    },
+    {
+      id: "standard-chartered-global-banking-2027-hk-workplace-scenario",
+      appId: "standard-chartered-global-banking-intern-2027-hk",
+      type: "VI",
+      platform: "SHL Workplace Scenario Assessment",
+      status: "Not Started",
+      received: "2026-09-11T17:30:00+08:00",
+      deadline: "2026-09-16T17:30:00+08:00",
+      original: "Global Banking Intern Hong Kong 2027 · Standard Chartered invitation received 2026-09-11 17:30 HKT states 'complete the assessment within 5 days of this email'; official deadline calculated as 2026-09-16 17:30 HKT · four workplace scenarios with one timed recorded question per scenario; approximately 20 minutes, with 1 minute preparation and 2 minutes recording per question",
+      urgency: "warning"
     },
     {
       id: "barclays-investment-banking-ot",
@@ -769,7 +795,19 @@ window.BB_SYNC_DATA = {
       shortTitle: "SC Global Banking OT",
       category: "OT",
       assessmentId: "standard-chartered-global-banking-2027-hk-skills-insight",
-      note: "硬截止 · 邀请于 2026-08-31 21:30 HKT 收到 · 正文明确要求 14 天内完成 · 官方截止 2026-09-14 21:30 HKT · 2026-09-07 22:32 HKT final reminder 警告 7 天内未完成将撤回申请，但提醒邮件不重置原截止 · 预计预留 60 分钟，其中 reasoning skills 计时 36 分钟",
+      note: "已完成 · 邀请于 2026-08-31 21:30 HKT 收到，原官方截止 2026-09-14 21:30 HKT · 2026-09-11 17:12 HKT 收到 Standard Chartered application update，正文确认已完成 Skills Insight Assessment",
+      hardDeadline: true,
+      done: true
+    },
+    {
+      id: "cal-standard-chartered-global-banking-2027-hk-workplace-scenario",
+      date: "2026-09-16",
+      time: "17:30",
+      title: "完成 Standard Chartered Workplace Scenario Assessment",
+      shortTitle: "SC Workplace Scenario",
+      category: "VI",
+      assessmentId: "standard-chartered-global-banking-2027-hk-workplace-scenario",
+      note: "硬截止 · 邀请于 2026-09-11 17:30 HKT 收到 · 正文明确要求邮件后 5 天内完成，官方截止 2026-09-16 17:30 HKT · 四个场景，每题 1 分钟准备、2 分钟录制，约 20 分钟",
       hardDeadline: true
     },
     {
