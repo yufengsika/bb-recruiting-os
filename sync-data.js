@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026091201,
-  checkedAt: "2026-09-12T06:08:03+08:00",
+  version: 2026092101,
+  checkedAt: "2026-09-21T00:31:03+08:00",
   correctedAt: "",
-  summary: "Incremental and full Outlook reconciliation completed 2026-09-12 06:08 HKT, including a backfill of messages received since 2026-09-10 06:04 HKT. All tracked companies and required assessment/status keywords were searched across all Outlook folders; marketing, job-alert and university-event emails were excluded. Deutsche Bank sent a formal rejection received 2026-09-11 18:49 HKT for the 2026 Deutsche Bank Talent for Tomorrow Off-Cycle Internship Programme - Investment Banking & Capital Markets (Green & Sustainable Finance / Fintech) - Hong Kong; the programme has completed hiring and the vacancy is closed. Standard Chartered sent an application update received 2026-09-11 17:12 HKT confirming completion of the Skills Insight Assessment for Global Banking Intern Hong Kong 2027, then a new Workplace Scenario assessment invitation received 2026-09-11 17:30 HKT. The Workplace Scenario email requires completion within 5 days, so the official deadline is 2026-09-16 17:30 HKT; it contains four timed recorded scenarios and is tracked as a VI. JPMorgan's recorded VI for job 210782439 remains pending with no official deadline (ASAP only). HSBC's Job Simulation completion confirmation remains correctly recorded. Morgan Stanley's 10 September interview still has no post-interview completion or status email. BNP Paribas Aon mapTQ OT, the two Citi questionnaires and the new Standard Chartered Workplace Scenario remain pending. Barclays IBD online assessment and Tencent comprehensive assessment remain Expired.",
+  summary: "Incremental and full Outlook reconciliation completed 2026-09-21 00:31 HKT, including a 14-day backfill from 2026-09-06 across all folders and tracked companies. Marketing, job-alert and university-event emails were excluded. Goldman Sachs sent a HireVue invitation received 2026-09-20 01:17 HKT for the distinct 2027 APEJ Hong Kong Wealth Management / Private Wealth Management Summer Analyst programme; the body requires completion within three days or an earlier divisional-recruiter deadline, so the calculated deadline is 2026-09-23 01:17 HKT with a recruiter-deadline caveat. Standard Chartered's Workplace Scenario VI had an official deadline of 2026-09-16 17:30 HKT; SHL reminders on 2026-09-13, 2026-09-16 and 2026-09-18 were checked, but no completion confirmation was found, so it is now Expired and the associated application is VI Expired. HSBC confirmed receipt of the requested Investment Banking information on 2026-09-16 19:02 HKT and stated the application is currently under review. JPMorgan's Inside the Industry Case Challenge VI was confirmed completed on 2026-09-14 17:54 HKT. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline; no other high-confidence application or assessment change was found.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -115,6 +115,20 @@ window.BB_SYNC_DATA = {
       logo: "assets/goldman-sachs.svg"
     },
     {
+      id: "gs-pwm-2027-hk",
+      company: "Goldman Sachs",
+      division: "Wealth Management · Private Wealth Management",
+      role: "2027 APEJ Hong Kong Wealth Management, Private Wealth Management Summer Analyst",
+      location: "Hong Kong",
+      status: "VI Pending",
+      applied: "",
+      channel: "Goldman Sachs Careers",
+      ref: "",
+      url: "",
+      logo: "assets/goldman-sachs.svg",
+      lastUpdate: "2026-09-20T01:17:00+08:00"
+    },
+    {
       id: "ms-ib",
       company: "Morgan Stanley",
       division: "Investment Banking",
@@ -159,7 +173,7 @@ window.BB_SYNC_DATA = {
       division: "Investment Banking",
       role: "Investment Banking - Internship",
       location: "",
-      status: "VI Completed",
+      status: "Under Review",
       applied: "2026-07-28",
       channel: "HSBC Careers",
       ref: "",
@@ -224,7 +238,7 @@ window.BB_SYNC_DATA = {
       division: "Global Banking",
       role: "Global Banking Intern Hong Kong 2027",
       location: "Hong Kong",
-      status: "VI Pending",
+      status: "VI Expired",
       applied: "2026-08-31",
       channel: "Standard Chartered Careers",
       ref: "",
@@ -472,10 +486,21 @@ window.BB_SYNC_DATA = {
       appId: "standard-chartered-global-banking-intern-2027-hk",
       type: "VI",
       platform: "SHL Workplace Scenario Assessment",
-      status: "Not Started",
+      status: "Expired",
       received: "2026-09-11T17:30:00+08:00",
       deadline: "2026-09-16T17:30:00+08:00",
-      original: "Global Banking Intern Hong Kong 2027 · Standard Chartered invitation received 2026-09-11 17:30 HKT states 'complete the assessment within 5 days of this email'; official deadline calculated as 2026-09-16 17:30 HKT · four workplace scenarios with one timed recorded question per scenario; approximately 20 minutes, with 1 minute preparation and 2 minutes recording per question",
+      original: "Global Banking Intern Hong Kong 2027 · Standard Chartered invitation received 2026-09-11 17:30 HKT states 'complete the assessment within 5 days of this email'; official deadline calculated as 2026-09-16 17:30 HKT · four workplace scenarios with one timed recorded question per scenario; approximately 20 minutes, with 1 minute preparation and 2 minutes recording per question · SHL reminders received 2026-09-13 19:32, 2026-09-16 18:30 and 2026-09-18 18:30; the latest reminder says the application will be withdrawn if not completed within the next seven days, but reminders do not reset the original deadline · no completion confirmation found",
+      urgency: "danger"
+    },
+    {
+      id: "gs-pwm-2027-hk-vi",
+      appId: "gs-pwm-2027-hk",
+      type: "VI",
+      platform: "Goldman Sachs HireVue",
+      status: "Not Started",
+      received: "2026-09-20T01:17:00+08:00",
+      deadline: "2026-09-23T01:17:00+08:00",
+      original: "2027 APEJ Hong Kong Wealth Management, Private Wealth Management Summer Analyst · Goldman Sachs HireVue invitation received 2026-09-20 01:17 HKT says 'complete your interview within three days or by the deadline shared by your divisional recruiter, whichever is earlier'; calculated three-day deadline is 2026-09-23 01:17 HKT, but the recruiter-specific deadline is not shown in the email · estimated duration 20–30 minutes · completion must be confirmed by a later email",
       urgency: "warning"
     },
     {
@@ -807,7 +832,20 @@ window.BB_SYNC_DATA = {
       shortTitle: "SC Workplace Scenario",
       category: "VI",
       assessmentId: "standard-chartered-global-banking-2027-hk-workplace-scenario",
-      note: "硬截止 · 邀请于 2026-09-11 17:30 HKT 收到 · 正文明确要求邮件后 5 天内完成，官方截止 2026-09-16 17:30 HKT · 四个场景，每题 1 分钟准备、2 分钟录制，约 20 分钟",
+      note: "已过期 · 邀请于 2026-09-11 17:30 HKT 收到 · 正文明确要求邮件后 5 天内完成，官方截止 2026-09-16 17:30 HKT · 四个场景，每题 1 分钟准备、2 分钟录制，约 20 分钟 · SHL 于 9 月 13、16、18 日发送提醒，未找到完成确认；提醒不会重置原截止",
+      hardDeadline: true,
+      status: "Expired",
+      closed: true
+    },
+    {
+      id: "cal-gs-pwm-2027-hk-vi",
+      date: "2026-09-23",
+      time: "01:17",
+      title: "完成 Goldman Sachs Wealth Management HireVue VI",
+      shortTitle: "GS PWM VI",
+      category: "VI",
+      assessmentId: "gs-pwm-2027-hk-vi",
+      note: "硬截止 · Goldman Sachs HireVue 邀请于 2026-09-20 01:17 HKT 收到，正文要求 3 天内完成；计算截止为 2026-09-23 01:17 HKT，但如 division recruiter 提供更早截止，以更早截止为准；邮件未显示 recruiter-specific deadline",
       hardDeadline: true
     },
     {
@@ -846,7 +884,7 @@ window.BB_SYNC_DATA = {
       shortTitle: "HSBC IBD 补资料",
       category: "Application",
       appId: "hsbc-investment-banking-internship",
-      note: "已完成 · HSBC 补资料邮件于 2026-09-09 15:27 HKT 收到，要求 48 小时内回复，按收件时间计算 hard deadline 为 2026-09-11 15:27 HKT · 候选人于 2026-09-09 19:38 HKT 回复并附上最新 transcript，提交 right-to-work、nationality、language、course completion、graduation date 和 preferred stream 信息 · 等待 HSBC 后续确认",
+      note: "已完成 · HSBC 补资料邮件于 2026-09-09 15:27 HKT 收到，要求 48 小时内回复，按收件时间计算 hard deadline 为 2026-09-11 15:27 HKT · 候选人于 2026-09-09 19:38 HKT 回复并附上最新 transcript，提交 right-to-work、nationality、language、course completion、graduation date 和 preferred stream 信息 · HSBC 于 2026-09-16 19:02 HKT 确认已收资料并说明申请目前 under review",
       hardDeadline: true,
       sourceType: "application",
       sourceId: "hsbc-investment-banking-internship",
