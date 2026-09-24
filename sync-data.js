@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026092101,
-  checkedAt: "2026-09-21T00:31:03+08:00",
-  correctedAt: "",
-  summary: "Incremental and full Outlook reconciliation completed 2026-09-21 00:31 HKT, including a 14-day backfill from 2026-09-06 across all folders and tracked companies. Marketing, job-alert and university-event emails were excluded. Goldman Sachs sent a HireVue invitation received 2026-09-20 01:17 HKT for the distinct 2027 APEJ Hong Kong Wealth Management / Private Wealth Management Summer Analyst programme; the body requires completion within three days or an earlier divisional-recruiter deadline, so the calculated deadline is 2026-09-23 01:17 HKT with a recruiter-deadline caveat. Standard Chartered's Workplace Scenario VI had an official deadline of 2026-09-16 17:30 HKT; SHL reminders on 2026-09-13, 2026-09-16 and 2026-09-18 were checked, but no completion confirmation was found, so it is now Expired and the associated application is VI Expired. HSBC confirmed receipt of the requested Investment Banking information on 2026-09-16 19:02 HKT and stated the application is currently under review. JPMorgan's Inside the Industry Case Challenge VI was confirmed completed on 2026-09-14 17:54 HKT. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline; no other high-confidence application or assessment change was found.",
+  version: 2026092401,
+  checkedAt: "2026-09-24T06:09:00+08:00",
+  correctedAt: "2026-09-24T06:09:00+08:00",
+  summary: "Incremental and full Outlook reconciliation completed 2026-09-24 06:09 HKT, including a 14-day backfill from 2026-09-10 across all folders, tracked companies and assessment/status keywords. Marketing, job-alert, university-event and verification-code emails were excluded. Goldman Sachs confirmed at 2026-09-22 22:56 HKT that the 2027 APEJ Hong Kong Wealth Management / Private Wealth Management HireVue was submitted before its calculated deadline. Morgan Stanley invited the 2027 Investment Banking Industrial Placement / Summer Analyst Program candidate to the final-round Superday on 2026-09-24 from 14:00 to 15:30 HKT; attendance was confirmed by reply on 2026-09-22 17:47 HKT, but no meeting link or further interview details were present in the thread as of this check. A prior merge omission was corrected: JPMorgan's Inside the Industry Case Challenge VI completion confirmation received 2026-09-14 17:54 HKT is now reflected in the application, assessment and calendar records. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired. No other high-confidence application or assessment change was found.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -42,12 +42,13 @@ window.BB_SYNC_DATA = {
       division: "Commercial & Investment Bank · Global Investment Banking",
       role: "2026 Global Investment Banking Program - Inside the Industry Case Challenge",
       location: "Hong Kong",
-      status: "VI Pending",
+      status: "VI Completed",
       applied: "2026-09-10",
       channel: "JPMorganChase Careers",
       ref: "210782439",
       url: "",
-      logo: "assets/jpmorgan.png"
+      logo: "assets/jpmorgan.png",
+      lastUpdate: "2026-09-14T17:54:00+08:00"
     },
     {
       id: "db-talent-for-tomorrow-off-cycle-ibcm-gsf-fintech-2026-hk",
@@ -120,13 +121,13 @@ window.BB_SYNC_DATA = {
       division: "Wealth Management · Private Wealth Management",
       role: "2027 APEJ Hong Kong Wealth Management, Private Wealth Management Summer Analyst",
       location: "Hong Kong",
-      status: "VI Pending",
+      status: "VI Completed",
       applied: "",
       channel: "Goldman Sachs Careers",
       ref: "",
       url: "",
       logo: "assets/goldman-sachs.svg",
-      lastUpdate: "2026-09-20T01:17:00+08:00"
+      lastUpdate: "2026-09-22T22:56:00+08:00"
     },
     {
       id: "ms-ib",
@@ -139,7 +140,9 @@ window.BB_SYNC_DATA = {
       channel: "Morgan Stanley Careers",
       ref: "",
       url: "",
-      logo: "assets/morgan-stanley.svg"
+      logo: "assets/morgan-stanley.svg",
+      latestStage: "Final-round Superday",
+      lastUpdate: "2026-09-22T15:48:00+08:00"
     },
     {
       id: "ms-ied-2027-hk-sg",
@@ -416,11 +419,13 @@ window.BB_SYNC_DATA = {
       appId: "jpm-cib-gib-inside-industry-case-challenge-2026-hk",
       type: "VI",
       platform: "J.P. Morgan HireVue",
-      status: "Not Started",
+      status: "Confirmed",
       received: "2026-09-10T21:51:00+08:00",
       deadline: "",
-      original: "2026 Commercial & Investment Bank - Global Investment Banking Program - Inside the Industry Case Challenge - Hong Kong · job 210782439 · application confirmation received 2026-09-10 19:19 HKT · recorded video interview invitation received 2026-09-10 21:51 HKT says to complete it 'as soon as possible' and provides no official deadline · completion must be confirmed by a later HireVue email",
-      urgency: "warning"
+      original: "2026 Commercial & Investment Bank - Global Investment Banking Program - Inside the Industry Case Challenge - Hong Kong · job 210782439 · application confirmation received 2026-09-10 19:19 HKT · recorded video interview invitation received 2026-09-10 21:51 HKT says to complete it 'as soon as possible' and provides no official deadline · completion confirmation received 2026-09-14 17:54 HKT stating 'We've received your video'",
+      urgency: "done",
+      completionSource: "email",
+      completionReceived: "2026-09-14T17:54:00+08:00"
     },
     {
       id: "citi-markets-questionnaire",
@@ -497,11 +502,13 @@ window.BB_SYNC_DATA = {
       appId: "gs-pwm-2027-hk",
       type: "VI",
       platform: "Goldman Sachs HireVue",
-      status: "Not Started",
+      status: "Confirmed",
       received: "2026-09-20T01:17:00+08:00",
       deadline: "2026-09-23T01:17:00+08:00",
-      original: "2027 APEJ Hong Kong Wealth Management, Private Wealth Management Summer Analyst · Goldman Sachs HireVue invitation received 2026-09-20 01:17 HKT says 'complete your interview within three days or by the deadline shared by your divisional recruiter, whichever is earlier'; calculated three-day deadline is 2026-09-23 01:17 HKT, but the recruiter-specific deadline is not shown in the email · estimated duration 20–30 minutes · completion must be confirmed by a later email",
-      urgency: "warning"
+      original: "2027 APEJ Hong Kong Wealth Management, Private Wealth Management Summer Analyst · Goldman Sachs HireVue invitation received 2026-09-20 01:17 HKT says 'complete your interview within three days or by the deadline shared by your divisional recruiter, whichever is earlier'; calculated three-day deadline is 2026-09-23 01:17 HKT, but the recruiter-specific deadline was not shown in the email · estimated duration 20–30 minutes · HireVue completion confirmation received 2026-09-22 22:56 HKT stating 'INTERVIEW COMPLETE' and that the pre-recorded interview was submitted",
+      urgency: "done",
+      completionSource: "email",
+      completionReceived: "2026-09-22T22:56:00+08:00"
     },
     {
       id: "barclays-investment-banking-ot",
@@ -846,7 +853,8 @@ window.BB_SYNC_DATA = {
       category: "VI",
       assessmentId: "gs-pwm-2027-hk-vi",
       note: "硬截止 · Goldman Sachs HireVue 邀请于 2026-09-20 01:17 HKT 收到，正文要求 3 天内完成；计算截止为 2026-09-23 01:17 HKT，但如 division recruiter 提供更早截止，以更早截止为准；邮件未显示 recruiter-specific deadline",
-      hardDeadline: true
+      hardDeadline: true,
+      done: true
     },
     {
       id: "cal-ms-ib-zoom-scheduling-follow-up",
@@ -900,7 +908,22 @@ window.BB_SYNC_DATA = {
       assessmentId: "jpm-cib-gib-inside-industry-case-challenge-2026-hk-vi",
       note: "建议完成时间，不是官方截止 · HireVue 邀请于 2026-09-10 21:51 HKT 收到，原文仅要求 as soon as possible，未给出明确 deadline · 完成后需等待 HireVue confirmation email",
       hardDeadline: false,
-      suggested: true
+      suggested: true,
+      done: true
+    },
+    {
+      id: "cal-ms-ib-superday-20260924",
+      date: "2026-09-24",
+      time: "14:00",
+      title: "Morgan Stanley IBD final-round Superday",
+      shortTitle: "MS IBD Superday",
+      category: "Interview",
+      appId: "ms-ib",
+      note: "固定面试时间 · 2026-09-24 14:00-15:30 HKT · Superday 邀请于 2026-09-22 15:48 HKT 收到，邮件确认已进入 final round · 候选人于 2026-09-22 17:47 HKT 回复确认参加 · 截至 2026-09-24 06:09 HKT，邮件线程中仍未出现 meeting link 或进一步面试安排，候选人已于 2026-09-23 16:09 HKT follow up",
+      hardDeadline: false,
+      fixedTime: true,
+      sourceType: "application",
+      sourceId: "ms-ib"
     },
     {
       id: "cal-personal-lunch-20260904",
