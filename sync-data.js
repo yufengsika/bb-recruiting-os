@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026092401,
-  checkedAt: "2026-09-24T06:09:00+08:00",
-  correctedAt: "2026-09-24T06:09:00+08:00",
-  summary: "Incremental and full Outlook reconciliation completed 2026-09-24 06:09 HKT, including a 14-day backfill from 2026-09-10 across all folders, tracked companies and assessment/status keywords. Marketing, job-alert, university-event and verification-code emails were excluded. Goldman Sachs confirmed at 2026-09-22 22:56 HKT that the 2027 APEJ Hong Kong Wealth Management / Private Wealth Management HireVue was submitted before its calculated deadline. Morgan Stanley invited the 2027 Investment Banking Industrial Placement / Summer Analyst Program candidate to the final-round Superday on 2026-09-24 from 14:00 to 15:30 HKT; attendance was confirmed by reply on 2026-09-22 17:47 HKT, but no meeting link or further interview details were present in the thread as of this check. A prior merge omission was corrected: JPMorgan's Inside the Industry Case Challenge VI completion confirmation received 2026-09-14 17:54 HKT is now reflected in the application, assessment and calendar records. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired. No other high-confidence application or assessment change was found.",
+  version: 2026092901,
+  checkedAt: "2026-09-29T06:01:51+08:00",
+  correctedAt: "2026-09-29T06:01:51+08:00",
+  summary: "Incremental Outlook check and 14-day full reconciliation completed 2026-09-29 06:01 HKT across all folders, tracked companies and assessment/status keywords. Marketing, job-alert, university-event and verification-code emails were excluded. HSBC's 2026-09-15 22:56 HKT decision email explicitly states that the Investment Banking - Internship application will not progress, correcting the prior Under Review status to Rejected. Morgan Stanley cancelled the original 2026-09-24 Superday because of an interviewer scheduling conflict, then confirmed a revised three-interview virtual Superday for 2026-09-28 at 14:30-15:00, 15:00-15:30 and 16:00-16:30 HKT. The candidate's same-day thank-you email and the interviewer's 19:43 HKT reply confirm the interview occurred, so the application and calendar event are marked Interview Completed. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired. No other high-confidence application or assessment change was found.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -135,14 +135,14 @@ window.BB_SYNC_DATA = {
       division: "Investment Banking",
       role: "2027 Investment Banking Industrial Placement / Summer Analyst Program",
       location: "Hong Kong / Singapore / Seoul",
-      status: "Interview Pending",
+      status: "Interview Completed",
       applied: "2026-08-01",
       channel: "Morgan Stanley Careers",
       ref: "",
       url: "",
       logo: "assets/morgan-stanley.svg",
-      latestStage: "Final-round Superday",
-      lastUpdate: "2026-09-22T15:48:00+08:00"
+      latestStage: "Final-round Superday completed",
+      lastUpdate: "2026-09-28T19:43:00+08:00"
     },
     {
       id: "ms-ied-2027-hk-sg",
@@ -176,12 +176,13 @@ window.BB_SYNC_DATA = {
       division: "Investment Banking",
       role: "Investment Banking - Internship",
       location: "",
-      status: "Under Review",
+      status: "Rejected",
       applied: "2026-07-28",
       channel: "HSBC Careers",
       ref: "",
       url: "",
-      logo: "assets/hsbc.svg"
+      logo: "assets/hsbc.svg",
+      lastUpdate: "2026-09-15T22:56:00+08:00"
     },
     {
       id: "citi-markets-st-2027-hk",
@@ -913,17 +914,18 @@ window.BB_SYNC_DATA = {
     },
     {
       id: "cal-ms-ib-superday-20260924",
-      date: "2026-09-24",
-      time: "14:00",
+      date: "2026-09-28",
+      time: "14:30",
       title: "Morgan Stanley IBD final-round Superday",
       shortTitle: "MS IBD Superday",
       category: "Interview",
       appId: "ms-ib",
-      note: "固定面试时间 · 2026-09-24 14:00-15:30 HKT · Superday 邀请于 2026-09-22 15:48 HKT 收到，邮件确认已进入 final round · 候选人于 2026-09-22 17:47 HKT 回复确认参加 · 截至 2026-09-24 06:09 HKT，邮件线程中仍未出现 meeting link 或进一步面试安排，候选人已于 2026-09-23 16:09 HKT follow up",
+      note: "已完成 · 原定 2026-09-24 14:00-15:30 HKT 的 Superday 因 interviewer scheduling conflict 于当日取消 · Morgan Stanley 于 2026-09-26 14:45 HKT 确认改期至 2026-09-28，三轮线上面试分别为 14:30-15:00、15:00-15:30、16:00-16:30 HKT · 候选人于 2026-09-28 19:20 HKT 发送面试后感谢邮件，面试官于 19:43 HKT 回复并确认双方已交流",
       hardDeadline: false,
       fixedTime: true,
       sourceType: "application",
-      sourceId: "ms-ib"
+      sourceId: "ms-ib",
+      done: true
     },
     {
       id: "cal-personal-lunch-20260904",
