@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026092901,
-  checkedAt: "2026-09-29T06:01:51+08:00",
+  version: 2026093001,
+  checkedAt: "2026-09-30T06:09:50+08:00",
   correctedAt: "2026-09-29T06:01:51+08:00",
-  summary: "Incremental Outlook check and 14-day full reconciliation completed 2026-09-29 06:01 HKT across all folders, tracked companies and assessment/status keywords. Marketing, job-alert, university-event and verification-code emails were excluded. HSBC's 2026-09-15 22:56 HKT decision email explicitly states that the Investment Banking - Internship application will not progress, correcting the prior Under Review status to Rejected. Morgan Stanley cancelled the original 2026-09-24 Superday because of an interviewer scheduling conflict, then confirmed a revised three-interview virtual Superday for 2026-09-28 at 14:30-15:00, 15:00-15:30 and 16:00-16:30 HKT. The candidate's same-day thank-you email and the interviewer's 19:43 HKT reply confirm the interview occurred, so the application and calendar event are marked Interview Completed. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired. No other high-confidence application or assessment change was found.",
+  summary: "Incremental Outlook check and 14-day full reconciliation completed 2026-09-30 06:09 HKT across all folders, tracked companies and assessment/status keywords. Marketing, job-alert, university-event and verification-code emails were excluded. Morgan Stanley replied on 2026-09-29 18:34 HKT that the remaining final-round interview session is scheduled for Friday 2026-10-02 10:15-10:45 HKT and requested an attendance confirmation; no subsequent confirmation or completion evidence is present, so the Morgan Stanley IBD application remains Interview Pending and the calendar task remains open. HSBC's 2026-09-15 22:56 HKT rejection remains recorded. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired. No other high-confidence application or assessment change was found.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -135,14 +135,14 @@ window.BB_SYNC_DATA = {
       division: "Investment Banking",
       role: "2027 Investment Banking Industrial Placement / Summer Analyst Program",
       location: "Hong Kong / Singapore / Seoul",
-      status: "Interview Completed",
+      status: "Interview Pending",
       applied: "2026-08-01",
       channel: "Morgan Stanley Careers",
       ref: "",
       url: "",
       logo: "assets/morgan-stanley.svg",
-      latestStage: "Final-round Superday completed",
-      lastUpdate: "2026-09-28T19:43:00+08:00"
+      latestStage: "Final-round Superday — final session scheduled",
+      lastUpdate: "2026-09-29T18:34:00+08:00"
     },
     {
       id: "ms-ied-2027-hk-sg",
@@ -914,18 +914,18 @@ window.BB_SYNC_DATA = {
     },
     {
       id: "cal-ms-ib-superday-20260924",
-      date: "2026-09-28",
-      time: "14:30",
-      title: "Morgan Stanley IBD final-round Superday",
+      date: "2026-10-02",
+      time: "10:15",
+      title: "Morgan Stanley IBD final-round Superday · final session",
       shortTitle: "MS IBD Superday",
       category: "Interview",
       appId: "ms-ib",
-      note: "已完成 · 原定 2026-09-24 14:00-15:30 HKT 的 Superday 因 interviewer scheduling conflict 于当日取消 · Morgan Stanley 于 2026-09-26 14:45 HKT 确认改期至 2026-09-28，三轮线上面试分别为 14:30-15:00、15:00-15:30、16:00-16:30 HKT · 候选人于 2026-09-28 19:20 HKT 发送面试后感谢邮件，面试官于 19:43 HKT 回复并确认双方已交流",
+      note: "待完成 · 原定 2026-09-24 14:00-15:30 HKT 的 Superday 因 interviewer scheduling conflict 于当日取消 · 已完成的场次为 2026-09-28 14:30-15:00、15:00-15:30、16:00-16:30 HKT；候选人于 2026-09-28 19:20 HKT 发送感谢邮件，面试官于 19:43 HKT 回复并确认交流 · Morgan Stanley 于 2026-09-29 18:34 HKT 另行确认最后一轮为 2026-10-02 10:15-10:45 HKT，并要求回复确认 · 截至本次检查未发现新的确认或完成证据",
       hardDeadline: false,
       fixedTime: true,
       sourceType: "application",
       sourceId: "ms-ib",
-      done: true
+      done: false
     },
     {
       id: "cal-personal-lunch-20260904",
