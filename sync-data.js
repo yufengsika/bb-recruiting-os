@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026100201,
-  checkedAt: "2026-10-02T06:02:25+08:00",
+  version: 2026100202,
+  checkedAt: "2026-10-02T09:02:45+08:00",
   correctedAt: "",
-  summary: "Daily Outlook check completed 2026-10-02 06:02 HKT for all folders, limited to messages received on 2026-10-02 HKT. The only result was HKU Daily Notices at 06:48 HKT, which is not recruitment mail. No new application, assessment, interview, deadline or status change was found. Existing records were preserved without historical company-name searches or backfill. Morgan Stanley IBD's final interview session remains scheduled today, 2026-10-02 10:15-10:45 HKT, because no new same-day message was present at check time. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired.",
+  summary: "Daily Outlook check completed 2026-10-02 09:02 HKT for all folders, limited to messages received on 2026-10-02 HKT. The only result was HKU Daily Notices at 06:48 HKT, which is not recruitment mail. No new application, assessment, interview, deadline or status change was found. Existing records were preserved without historical company-name searches or backfill. Morgan Stanley IBD's final interview session remains scheduled today, 2026-10-02 10:15-10:45 HKT, because no new same-day message was present at check time. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
