@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026093001,
-  checkedAt: "2026-09-30T06:09:50+08:00",
-  correctedAt: "2026-09-29T06:01:51+08:00",
-  summary: "Incremental Outlook check and 14-day full reconciliation completed 2026-09-30 06:09 HKT across all folders, tracked companies and assessment/status keywords. Marketing, job-alert, university-event and verification-code emails were excluded. Morgan Stanley replied on 2026-09-29 18:34 HKT that the remaining final-round interview session is scheduled for Friday 2026-10-02 10:15-10:45 HKT and requested an attendance confirmation; no subsequent confirmation or completion evidence is present, so the Morgan Stanley IBD application remains Interview Pending and the calendar task remains open. HSBC's 2026-09-15 22:56 HKT rejection remains recorded. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired. No other high-confidence application or assessment change was found.",
+  version: 2026100201,
+  checkedAt: "2026-10-02T06:02:25+08:00",
+  correctedAt: "",
+  summary: "Daily Outlook check completed 2026-10-02 06:02 HKT for all folders, limited to messages received on 2026-10-02 HKT. The only result was HKU Daily Notices at 06:48 HKT, which is not recruitment mail. No new application, assessment, interview, deadline or status change was found. Existing records were preserved without historical company-name searches or backfill. Morgan Stanley IBD's final interview session remains scheduled today, 2026-10-02 10:15-10:45 HKT, because no new same-day message was present at check time. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
