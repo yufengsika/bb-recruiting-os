@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026100301,
-  checkedAt: "2026-10-03T09:06:07+08:00",
+  version: 2026100401,
+  checkedAt: "2026-10-04T08:32:47+08:00",
   correctedAt: "",
-  summary: "Daily Outlook check completed 2026-10-03 09:06 HKT for all folders, limited to messages received on 2026-10-03 HKT. The only result was HKU Daily Notices at 06:14 HKT, which is not recruitment mail. No new application, assessment, interview, deadline or status change was found. Existing records were preserved without company-name searches or historical backfill. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired.",
+  summary: "Daily Outlook check completed 2026-10-04 08:32 HKT for all folders, limited to messages received on 2026-10-04 HKT. The only same-day results were HKU Daily Notices at 06:12 HKT and a CEDARS scam alert at 03:07 HKT; neither is recruitment mail. Older 2026-10-03 results shown by Outlook were excluded and not backfilled. No new application, assessment, interview, deadline or status change was found. Existing records were preserved without company-name searches or historical backfill. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
