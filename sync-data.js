@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026100401,
-  checkedAt: "2026-10-04T08:32:47+08:00",
+  version: 2026100501,
+  checkedAt: "2026-10-05T09:39:59+08:00",
   correctedAt: "",
-  summary: "Daily Outlook check completed 2026-10-04 08:32 HKT for all folders, limited to messages received on 2026-10-04 HKT. The only same-day results were HKU Daily Notices at 06:12 HKT and a CEDARS scam alert at 03:07 HKT; neither is recruitment mail. Older 2026-10-03 results shown by Outlook were excluded and not backfilled. No new application, assessment, interview, deadline or status change was found. Existing records were preserved without company-name searches or historical backfill. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired.",
+  summary: "Daily Outlook check completed 2026-10-05 09:39 HKT for all folders, limited to messages received on 2026-10-05 HKT. HKU Daily Notices at 06:14 HKT was non-recruitment. A Schroders Careers confirmation received at 03:09 HKT states 'We received your job application for Intern - 2143'; this is recorded as a new Applied application, with programme details and any assessment/deadline left unspecified because the email does not provide them. No other same-day recruitment change was found. Older results were excluded and not backfilled. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -303,6 +303,20 @@ window.BB_SYNC_DATA = {
       ref: "",
       url: "",
       logo: ""
+    },
+    {
+      id: "schroders-intern-2143",
+      company: "Schroders",
+      division: "Programme not stated in confirmation",
+      role: "Intern - 2143",
+      location: "",
+      status: "Applied",
+      applied: "2026-10-05",
+      channel: "Schroders Careers",
+      ref: "2143",
+      url: "",
+      logo: "",
+      lastUpdate: "2026-10-05T03:09:00+08:00"
     }
   ],
   assessments: [
