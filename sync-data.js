@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026100601,
-  checkedAt: "2026-10-06T07:23:05+08:00",
+  version: 2026100701,
+  checkedAt: "2026-10-07T06:20:38+08:00",
   correctedAt: "",
-  summary: "Daily Outlook check completed 2026-10-06 07:23 HKT for all folders, limited to messages received on 2026-10-06 HKT. The only result was HKU Daily Notices at 06:12 HKT, which is non-recruitment. No same-day application confirmation, assessment invitation, completion confirmation or application status update was found. Older results were excluded and not backfilled. Existing applications, pending assessments, expired assessments and manual tasks remain unchanged.",
+  summary: "Daily Outlook check completed 2026-10-07 06:20 HKT for all folders, limited to messages received on 2026-10-07 HKT. A Rothschild & Co application update received at 03:15 HKT confirms the 2027 Global Advisory Summer Internship Programme - Hong Kong application and states that it is under review; the application is recorded as Applied with an under-review latest stage. The full email contains no assessment invitation or official deadline. HKU Daily Notices, Carolina Alumni, Statista and Sony messages were non-recruitment. Older results were excluded and not backfilled. Existing pending assessments, expired assessments and manual tasks remain unchanged.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
@@ -317,6 +317,21 @@ window.BB_SYNC_DATA = {
       url: "",
       logo: "",
       lastUpdate: "2026-10-05T03:09:00+08:00"
+    },
+    {
+      id: "rothschild-global-advisory-summer-internship-2027-hk",
+      company: "Rothschild & Co",
+      division: "Global Advisory",
+      role: "2027 Global Advisory Summer Internship Programme",
+      location: "Hong Kong",
+      status: "Applied",
+      applied: "2026-10-07",
+      channel: "Rothschild & Co Careers",
+      ref: "819205",
+      url: "",
+      logo: "",
+      latestStage: "Application under review",
+      lastUpdate: "2026-10-07T03:15:00+08:00"
     }
   ],
   assessments: [
