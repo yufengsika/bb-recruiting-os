@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026100501,
-  checkedAt: "2026-10-05T09:39:59+08:00",
+  version: 2026100601,
+  checkedAt: "2026-10-06T07:23:05+08:00",
   correctedAt: "",
-  summary: "Daily Outlook check completed 2026-10-05 09:39 HKT for all folders, limited to messages received on 2026-10-05 HKT. HKU Daily Notices at 06:14 HKT was non-recruitment. A Schroders Careers confirmation received at 03:09 HKT states 'We received your job application for Intern - 2143'; this is recorded as a new Applied application, with programme details and any assessment/deadline left unspecified because the email does not provide them. No other same-day recruitment change was found. Older results were excluded and not backfilled. BNP Paribas Aon mapTQ OT and both Citi questionnaires remain pending with no official deadline. Standard Chartered Workplace Scenario VI, Barclays IBD OT and Tencent comprehensive assessment remain expired.",
+  summary: "Daily Outlook check completed 2026-10-06 07:23 HKT for all folders, limited to messages received on 2026-10-06 HKT. The only result was HKU Daily Notices at 06:12 HKT, which is non-recruitment. No same-day application confirmation, assessment invitation, completion confirmation or application status update was found. Older results were excluded and not backfilled. Existing applications, pending assessments, expired assessments and manual tasks remain unchanged.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     { id: "ubs-am", status: "VI Completed" },
