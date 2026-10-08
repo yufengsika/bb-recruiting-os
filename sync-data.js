@@ -1,12 +1,19 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026100701,
-  checkedAt: "2026-10-07T06:20:38+08:00",
+  version: 2026100801,
+  checkedAt: "2026-10-08T09:11:30+08:00",
   correctedAt: "",
-  summary: "Daily Outlook check completed 2026-10-07 06:20 HKT for all folders, limited to messages received on 2026-10-07 HKT. A Rothschild & Co application update received at 03:15 HKT confirms the 2027 Global Advisory Summer Internship Programme - Hong Kong application and states that it is under review; the application is recorded as Applied with an under-review latest stage. The full email contains no assessment invitation or official deadline. HKU Daily Notices, Carolina Alumni, Statista and Sony messages were non-recruitment. Older results were excluded and not backfilled. Existing pending assessments, expired assessments and manual tasks remain unchanged.",
+  summary: "Rolling 72-hour Outlook check completed for all folders from 2026-10-05 09:11:30 HKT through 2026-10-08 09:11:30 HKT. New application confirmations were found for JCAP Markets Intern (confirmation 2766), Mizuho Securities 2027 Summer Internship Program - Hong Kong, and Janus Henderson Investors (programme not stated in the confirmation). UBS confirmed that the 2027 Summer Internship - Asset Management - Hong Kong application remains under consideration; its completed VI status was preserved. The previously recorded Rothschild & Co application update was rechecked as an overlapping result and not duplicated. Franklin Templeton system-migration/talent-community mail, a Workday candidate-account verification, university notices and job marketing were excluded because they did not prove a new application. No new assessment invitation, completion confirmation or official deadline was found. Existing pending assessments, expired assessments and manual tasks remain unchanged.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
-    { id: "ubs-am", status: "VI Completed" },
+    {
+      id: "ubs-am",
+      status: "VI Completed",
+      ref: "341182BR",
+      candidateRef: "5316420",
+      latestStage: "Application still under consideration",
+      lastUpdate: "2026-10-05T17:47:00+08:00"
+    },
     { id: "bofa-gib", status: "VI Completed", ref: "4739429" },
     { id: "gs-hk", status: "Applied", applied: "2026-07-31", logo: "assets/goldman-sachs.svg" },
     { id: "jpm-mkts", status: "VI Completed", ref: "210747060" },
@@ -332,6 +339,51 @@ window.BB_SYNC_DATA = {
       logo: "",
       latestStage: "Application under review",
       lastUpdate: "2026-10-07T03:15:00+08:00"
+    },
+    {
+      id: "jcap-markets-intern-20261005",
+      company: "JCAP",
+      division: "Markets",
+      role: "Markets Intern",
+      location: "",
+      status: "Applied",
+      applied: "2026-10-05",
+      channel: "JCAP Careers",
+      ref: "2766",
+      url: "",
+      logo: "",
+      latestStage: "Application under review",
+      lastUpdate: "2026-10-05T10:47:00+08:00"
+    },
+    {
+      id: "mizuho-securities-summer-internship-2027-hk",
+      company: "Mizuho Securities",
+      division: "Summer Internship",
+      role: "2027 Summer Internship Program",
+      location: "Hong Kong",
+      status: "Applied",
+      applied: "2026-10-05",
+      channel: "Mizuho Securities Careers",
+      ref: "",
+      url: "",
+      logo: "",
+      latestStage: "Application under review",
+      lastUpdate: "2026-10-05T15:55:00+08:00"
+    },
+    {
+      id: "janus-henderson-application-20261005",
+      company: "Janus Henderson Investors",
+      division: "Programme not stated in confirmation",
+      role: "Application received - programme not stated",
+      location: "",
+      status: "Applied",
+      applied: "2026-10-05",
+      channel: "Janus Henderson Careers",
+      ref: "",
+      url: "",
+      logo: "",
+      latestStage: "Application received",
+      lastUpdate: "2026-10-05T16:29:00+08:00"
     }
   ],
   assessments: [
