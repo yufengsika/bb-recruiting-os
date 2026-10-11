@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026100801,
-  checkedAt: "2026-10-08T09:11:30+08:00",
+  version: 2026101101,
+  checkedAt: "2026-10-11T07:51:19+08:00",
   correctedAt: "",
-  summary: "Rolling 72-hour Outlook check completed for all folders from 2026-10-05 09:11:30 HKT through 2026-10-08 09:11:30 HKT. New application confirmations were found for JCAP Markets Intern (confirmation 2766), Mizuho Securities 2027 Summer Internship Program - Hong Kong, and Janus Henderson Investors (programme not stated in the confirmation). UBS confirmed that the 2027 Summer Internship - Asset Management - Hong Kong application remains under consideration; its completed VI status was preserved. The previously recorded Rothschild & Co application update was rechecked as an overlapping result and not duplicated. Franklin Templeton system-migration/talent-community mail, a Workday candidate-account verification, university notices and job marketing were excluded because they did not prove a new application. No new assessment invitation, completion confirmation or official deadline was found. Existing pending assessments, expired assessments and manual tasks remain unchanged.",
+  summary: "Rolling 72-hour Outlook check completed for all folders from 2026-10-08 07:51:19 HKT through 2026-10-11 07:51:19 HKT. No new application confirmation, assessment invitation, completion confirmation or official deadline was found. Overlapping and in-window messages were deduplicated against existing stable records; HKU notices, Moodle/forum messages, Statista mail, career newsletters and other informational messages were excluded as non-recruiting workflow evidence. Existing applications, pending assessments, expired assessments and manual preparation tasks remain unchanged.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     {
