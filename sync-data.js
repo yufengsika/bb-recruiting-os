@@ -1,9 +1,9 @@
 // Updated by the daily Outlook recruiting monitor. Keep this file valid JavaScript.
 window.BB_SYNC_DATA = {
-  version: 2026101101,
-  checkedAt: "2026-10-11T07:51:19+08:00",
+  version: 2026101201,
+  checkedAt: "2026-10-12T09:00:18+08:00",
   correctedAt: "",
-  summary: "Rolling 72-hour Outlook check completed for all folders from 2026-10-08 07:51:19 HKT through 2026-10-11 07:51:19 HKT. No new application confirmation, assessment invitation, completion confirmation or official deadline was found. Overlapping and in-window messages were deduplicated against existing stable records; HKU notices, Moodle/forum messages, Statista mail, career newsletters and other informational messages were excluded as non-recruiting workflow evidence. Existing applications, pending assessments, expired assessments and manual preparation tasks remain unchanged.",
+  summary: "Rolling 72-hour Outlook check completed for all folders from 2026-10-09 09:00:18 HKT through 2026-10-12 09:00:18 HKT. No new application confirmation, assessment invitation, completion confirmation or official deadline was found. Messages received before the 2026-10-09 09:00:18 HKT cutoff were excluded; overlapping and in-window messages were deduplicated against existing stable records. HKU notices, Moodle/forum messages, Statista mail, career newsletters and recruitment information reminders were excluded as non-recruiting workflow evidence. Existing applications, pending assessments, expired assessments and manual preparation tasks remain unchanged.",
   applications: [
     { id: "ubs-gb", status: "VI Completed" },
     {
